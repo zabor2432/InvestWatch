@@ -1,0 +1,136 @@
+x-service: &service
+  restart: unless-stopped
+  env_file: .env
+
+x-dagster: &dagster
+  <<: *service
+  build: ./orchestrator
+  volumes: [dagster-data:/dagster_data]
+  depends_on:
+    db: { condition: service_healthy }
+    minio: { condition: service_started }
+
+x-scraper-build: &scraper-build
+  context: ./scraper
+  additional_contexts:
+    common: ./common
+    registry: ./docs/firm_registry
+
+# The scraper stack (redis, searxng, migrations, scraper, scraper-worker) has `profiles: [scraper]`:
+# it starts only with COMPOSE_PROFILES=scraper in .env (or `docker compose --profile scraper up`).
+services:
+  db:
+    <<: *service
+    build: ./db
+    # exposed for DB clients (DBeaver, TablePlus) of the whole team; credentials from .env
+    ports: ["${POSTGRES_HOST_PORT:-5432}:5432"]
+    volumes: [db-data:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      retries: 10
+
+  # S3-compatible object storage for the whole project (pipeline bucket + scraper media bucket);
+  # upstream stopped publishing minio/minio images in 2025, pgsty/minio is the community build of the same server
+  minio:
+    <<: *service
+    image: pgsty/minio:RELEASE.2026-08-04T00-00-00Z
+    command: server /data --console-address ":9001"
+    # host ports configurable: 9000 is taken on some machines (e.g. by a corporate VPN/proxy client)
+    ports: ["${MINIO_API_HOST_PORT:-9000}:9000", "${MINIO_CONSOLE_HOST_PORT:-9001}:9001"]
+    volumes: [minio-data:/data]
+
+  dagster-daemon:
+    <<: *dagster
+    command: dagster-daemon run
+
+  dagster-webserver:
+    <<: *dagster
+    command: dagster-webserver -h 0.0.0.0 -p 3000 -w workspace.yaml
+    ports: ["3001:3000"]
+
+  # one-shot: puts the demo records (./demo) into the pipeline bucket; stand-in for the scraper
+  seed:
+    <<: *service
+    build:
+      context: ./demo/seed
+      additional_contexts:
+        common: ./common
+    volumes: ["./demo:/demo:ro", "./data/scraped:/data/scraped:ro", "./scraper/config:/scraper-config:ro"]
+    depends_on:
+      minio: { condition: service_started }
+    restart: on-failure
+
+  backend:
+    <<: *service
+    build: ./backend
+    ports: ["8000:8000"]
+    environment:
+      DAGSTER_GRAPHQL_URL: http://dagster-webserver:3000/graphql
+    depends_on:
+      db: { condition: service_healthy }
+      minio: { condition: service_started }
+      dagster-webserver: { condition: service_started }
+
+  frontend:
+    <<: *service
+    build: ./frontend
+    ports: ["3000:80"]
+    depends_on: [backend]
+
+  # --- scraper stack (profile: scraper) ---
+
+  # applies Alembic migrations (schema from ./common) and exits
+  migrations:
+    <<: *service
+    profiles: [scraper]
+    restart: "no"
+    build:
+      context: ./migrations
+      additional_contexts:
+        common: ./common
+    depends_on:
+      db: { condition: service_healthy }
+
+  redis:
+    <<: *service
+    profiles: [scraper]
+    image: redis:7.4-alpine
+    volumes: [redis-data:/data]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      retries: 10
+
+  searxng:
+    <<: *service
+    profiles: [scraper]
+    image: searxng/searxng:2026.11.21-c6ee3e9fd
+    environment:
+      SEARXNG_SECRET: ${SEARXNG_SECRET}
+    volumes: ["./searxng/settings.yml:/etc/searxng/settings.yml:ro"]
+
+  scraper:
+    <<: *service
+    profiles: [scraper]
+    build: *scraper-build
+    ports: ["8001:8001"]
+    depends_on: &scraper-deps
+      migrations: { condition: service_completed_successfully }
+      redis: { condition: service_healthy }
+      minio: { condition: service_started }
+      searxng: { condition: service_started }
+
+  # RQ worker + cron scheduler (SCRAPE_CRON, REGISTRY_SYNC_CRON)
+  scraper-worker:
+    <<: *service
+    profiles: [scraper]
+    build: *scraper-build
+    command: ["python", "-m", "app.worker"]
+    depends_on: *scraper-deps
+
+volumes:
+  db-data:
+  minio-data:
+  redis-data:
+  dagster-data:

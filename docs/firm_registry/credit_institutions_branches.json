@@ -1,0 +1,587 @@
+{
+  "meta": {
+    "title_pl": "Zestawienie notyfikacji dot. działalności instytucji kredytowych na terytorium RP poprzez oddział",
+    "url": "https://www.knf.gov.pl/podmioty/Podmioty_sektora_bankowego/zestawienie_notyfikacji_dot_dzialnosci_instucji_kredytowych_na_terytorium_RP_poprzez_oddzial",
+    "source": "Komisja Nadzoru Finansowego (KNF)",
+    "retrieved": "2026-11-21",
+    "entry_count": 34,
+    "complete": true,
+    "note": "Parsed by scraper app.registry.knf; struck-through text stored in former_* fields."
+  },
+  "entries": [
+    {
+      "name": "Aareal Bank AG",
+      "home_country": "Niemcy",
+      "supervisor": "Bundesanstalt für Finanzdienstleistungsaufsicht",
+      "polish_branch": [
+        "Aareal Bank Aktiengesellschaft (Spółka Akcyjna) Oddział w Polsce",
+        "ul. Rondo ONZ 1",
+        "00-124 Warszawa",
+        "tel. 22 544 90 63"
+      ],
+      "krs": "0000311076",
+      "notification_received": "2008-04-24",
+      "operations_start": "2008-09-01",
+      "scope": [
+        "1, 2, 6, 7(7c, 7d) wg Załącznika I do Dyrektywy 2006/48/WE;",
+        "świadczenie usług przewidzianych w sekcji A w punkcie 5 w odniesieniu do instrumentów finansowych przewidzianych w sekcji C w punktach 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 Załącznika I do Dyrektywy 2004/39/WE;"
+      ]
+    },
+    {
+      "name": "Allfunds Bank S.A.U.",
+      "home_country": "Hiszpania",
+      "supervisor": "National Bank of Spain",
+      "polish_branch": [
+        "Allfunds Bank S.A.U. (Spółka Akcyjna) Oddział w Polsce",
+        "The Warsaw Hub",
+        "ul. Rondo Daszyńskiego 2B",
+        "00-843 Warszawa"
+      ],
+      "krs": "0000852293",
+      "notification_received": "2020-08-20",
+      "operations_start": "2020-10-06",
+      "scope": [
+        "2, 4 (4a, 4b, 4c), 7(7b, 7d, 7e), 12, 13 wg Załącznika I do Dyrektywy 2013/36/UE;",
+        "świadczenie usług przewidzianych w Sekcji A w punktach 1, 2, 3, 5 w odniesieniu do instrumentu finansowego przewidzianego w Sekcji C w punktach 1, 2, 3 oraz świadczenie usługi przewidzianej w Sekcji B w punktach 1, 4, 5 w odniesieniu do instrumentu finansowego przewidzianego w Sekcji C w punktach 1, 2, 3 Załącznika I do Dyrektywy 2014/65/UE;"
+      ]
+    },
+    {
+      "name": "AS Inbank",
+      "home_country": "Estonia",
+      "supervisor": "Finantsinspektsioon",
+      "polish_branch": [
+        "AS Inbank Spółka Akcyjna Oddział w Polsce",
+        "ul. Fabryczna 5A",
+        "00-446 Warszawa"
+      ],
+      "krs": "0000635086",
+      "notification_received": "2016-11-21",
+      "operations_start": "2017-02-20",
+      "scope": [
+        "1, 2 wg Załącznika I do Dyrektywy 2013/36/UE"
+      ]
+    },
+    {
+      "name": "Avarda Bank AB (TF Bank AB)",
+      "home_country": "Szwecja",
+      "supervisor": "Finansinspektionen",
+      "polish_branch": [
+        "Avarda Bank AB (TF BANK AB (Spółka Akcyjna)) Oddział w Polsce",
+        "ul. Aleja Grunwaldzka 103A",
+        "80-244 Gdańsk"
+      ],
+      "krs": "0000533349",
+      "notification_received": "27.03.2015",
+      "operations_start": "2015-04-09",
+      "scope": [
+        "2 wg Załącznika I do Dyrektywy 2013/36/UE"
+      ]
+    },
+    {
+      "name": "Bank of China (Europe) S.A.",
+      "home_country": "Luksemburg",
+      "supervisor": "Commision de Surveillance du Secteur Financier",
+      "polish_branch": [
+        "Bank of China (Europe) S.A. Spółka Akcyjna Oddział w Polsce",
+        "ul. Zielna 41/43",
+        "00-108 Warszawa",
+        "tel. 22 417 88 88"
+      ],
+      "krs": "0000415913",
+      "notification_received": "2012-02-14",
+      "operations_start": "2012-06-06",
+      "scope": [
+        "1, 2, 4, 5, 6, 7 (7a, 7b, 7c, 7d, 7e), 10, 12, 14, 15 wg Załącznika I do Dyrektywy 2006/48/WE;",
+        "świadczenie usług przewidzianych w sekcji A w punktach 1, 2, 3, 5 oraz w sekcji B w punktach 1, 2, 4, 7 w odniesieniu do instrumentów finansowych przewidzianych w sekcji C w punktach 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 Załącznika I do Dyrektywy 2004/39/WE;"
+      ]
+    },
+    {
+      "name": "BFF Bank S.p.A. (Banca Farmafactoring S.p.A.)",
+      "home_country": "Włochy",
+      "supervisor": "Banca d'Italia",
+      "polish_branch": [
+        "BFF Bank S.p.A. Spółka Akcyjna Oddział w Polsce",
+        "ul. Kilińskiego 66, budynek B",
+        "90-118 Łódz"
+      ],
+      "krs": "0000790169",
+      "notification_received": "2019-05-06",
+      "operations_start": "2019-09-19",
+      "scope": [
+        "1, 4c wg Załącznika I do Dyrektywy 2013/36/UE"
+      ]
+    },
+    {
+      "name": "BNP Paribas Societe Anonyme",
+      "home_country": "Francja",
+      "supervisor": "Authorité de Contrôle Prudentiel et de Résolution",
+      "polish_branch": [
+        "BNP Paribas S.A. Oddział w Polsce",
+        "ul. Wronia 31",
+        "00-846 Warszawa",
+        "tel. 22 697 23 09"
+      ],
+      "krs": "0000245000",
+      "notification_received": "2005-08-03",
+      "operations_start": "2006-01-29",
+      "scope": [
+        "1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12,13, 14 wg Załącznika I do Dyrektywy 2006/48/WE;"
+      ]
+    },
+    {
+      "name": "CA AUTO BANK S.p.A (FCA Bank S.p.A.)",
+      "home_country": "Włochy",
+      "supervisor": "Banca d'Italia",
+      "polish_branch": [
+        "CA AUTO BANK S.p.A. Spółka Akcyjna Oddział w Polsce",
+        "ul. Aleja Wyścigowa 6",
+        "02-681 Warszawa"
+      ],
+      "krs": "0000816336",
+      "notification_received": "2019-10-18",
+      "operations_start": "2020-01-01",
+      "scope": [
+        "2, 6 wg Załącznika I do Dyrektywy 2013/36/UE"
+      ]
+    },
+    {
+      "name": "Caixabank S.A.",
+      "home_country": "Hiszpania",
+      "supervisor": "Banco de Espańa",
+      "polish_branch": [
+        "Caixabank, S.A. (Spółka Akcyjna) Oddział w Polsce",
+        "ul. Prosta 51",
+        "00-838 Warszawa",
+        "tel. 22 306 12 00"
+      ],
+      "krs": "0000282374",
+      "notification_received": "2007-05-04",
+      "operations_start": "2007-06-15",
+      "scope": [
+        "1, 2, 3, 4, 5, 6, 7 (7a, 7b, 7c, 7d, 7e), 8, 9, 10, 11, 12, 13, 14 wg Załącznika I do Dyrektywy 2006/48/WE"
+      ]
+    },
+    {
+      "name": "China Construction Bank (Europe) S.A.",
+      "home_country": "Luksemburg",
+      "supervisor": "Commision de Surveillance du Secteur Financier",
+      "polish_branch": [
+        "China Construction Bank (Europe) S.A. (Spółka Akcyjna) Oddział w Polsce",
+        "ul. Emilii Plater 53",
+        "00-113 Warszawa"
+      ],
+      "krs": "0000652527",
+      "notification_received": "10.10.2016",
+      "operations_start": "2017-08-31",
+      "scope": [
+        "1, 2, 3, 4 (4a, 4b, 4c, 4d, 4e, 4f, 4g, 5, 6, 7 (7a, 7b, 7c, 7d, 7e) 8, 9, 10, 11, 12, 13, 14, 15 wg Załącznika I do Dyrektywy 2013/36/UE"
+      ]
+    },
+    {
+      "name": "Citibank Europe plc",
+      "home_country": "Irlandia",
+      "supervisor": "Central Bank of Ireland",
+      "polish_branch": [
+        "Citibank Europe plc (Publiczna Spółka Akcyjna) Oddział w Polsce",
+        "ul. Prosta 36",
+        "00-838 Warszawa",
+        "tel. 22 692 93 25"
+      ],
+      "krs": "0000240467",
+      "notification_received": "2009-11-09",
+      "operations_start": "2010-01-18",
+      "scope": [
+        "12 wg Załącznika I do Dyrektywy 2006/48/WE"
+      ]
+    },
+    {
+      "name": "Danske Bank A/S",
+      "home_country": "Dania",
+      "supervisor": "The Danish Financial Supervision Authority",
+      "polish_branch": [
+        "Danske Bank A/S Spółka Akcyjna Oddzial w Polsce",
+        "ul. Wspólna 70",
+        "00-687 Warszawa",
+        "tel. 22 33 77 119"
+      ],
+      "krs": "0000250684",
+      "notification_received": "2005-05-25",
+      "operations_start": "2006-10-01",
+      "scope": [
+        "1, 2, 3, 4, 5, 6, 7 (7a, 7b, 7c, 7d, 7e), 8, 9, 10, 11, 12, 13 wg Załącznika I do Dyrektywy 2006/48/WE;",
+        "świadczenie usług przewidzianych w sekcji A w punktach 1, 2, 3, 4, 5, 6, 7 oraz w sekcji B w punktach 1, 2, 3, 4, 5, 6, 7 w odniesieniu do instrumentów finansowych przewidzianych w sekcji C w punktach 1, 2, 3, 4, 5, 6, 7, 8, 10 Załącznika I do Dyrektywy 2004/39/WE;"
+      ]
+    },
+    {
+      "name": "Euroclear Bank SA/NV",
+      "home_country": "Belgia",
+      "supervisor": "National Bank of Belgium",
+      "polish_branch": [
+        "Euroclear Bank SA/NV (Spółka Akcyjna) Oddział w Polsce",
+        "ul. Puszkarska 7L",
+        "30-644 Kraków"
+      ],
+      "krs": "0000434660",
+      "notification_received": "2012-11-27",
+      "operations_start": "2013-01-28",
+      "scope": [
+        "8, 12 wg Załącznika I do Dyrektywy 2006/48/WE;",
+        "świadczenie usług przewidzianych w Sekcji A w punkcie 1 i Sekcji B w punkcie 1 w odniesieniu do instrumentów finansowych przewidzianych w Sekcji C w punkcie 3, a także świadczenia usług oraz wykonywania działalności przewidzianej w Sekcji B w punkcie 1 w odniesieniu do instrumentów finansowych przewidzianych w Sekcji C w punkcie 1 Załącznika I do Dyrektywy 2004/39/WE;"
+      ]
+    },
+    {
+      "name": "Goldman Sachs Bank Europe SE",
+      "home_country": "Niemcy",
+      "supervisor": "Bundesanstalt für Finanzdienstleistungsaufsicht",
+      "polish_branch": [
+        "Goldman Sachs Bank Europe SE Spółka Europejska Oddział w Polsce",
+        "ul. Plac Europejski 1",
+        "00-844 Warszawa"
+      ],
+      "krs": "0000762127",
+      "notification_received": "2019-01-16",
+      "operations_start": "2020-07-01",
+      "scope": [
+        "1, 2, 4 (4a, 4b, 4c, 4d, 4e, 4f, 4g), 7(7a, 7b, 7c, 7d, 7e), 8, 9, 13, 14 wg Załącznika I do Dyrektywy 2013/36/UE;",
+        "świadczenie usług przewidzianych w Sekcji A w punkcie 5 i 6 w odniesieniu do instrumentów finansowych przewidzianych w Sekcji C w punktach 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 oraz w Sekcji A w punkcie 1 w odniesieniu do instrumentów finansowych przewidzianych w Sekcji C w punkcie 3 oraz świadczenie usług przewidzianych w Sekcji A w punkcie 3 w odniesieniu do instrumentów finansowych przewidzianych w Sekcji C w punkcie 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 oraz świadczenie usług przewidzianych w Sekcji B w punktach 2, 3, 4, 5, 6, 7 w odniesieniu do instrumentów finansowych przewidzianych w Sekcji C w punktach 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 Załącznika I do Dyrektywy 2014/65/UE;"
+      ]
+    },
+    {
+      "name": "Haitong Bank S.A. (Banco Espirito Santo de Investimento S.A.)",
+      "home_country": "Portugalia",
+      "supervisor": "Banco de Portugal",
+      "polish_branch": [
+        "Haitong Bank S.A., Spółka Akcyjna Oddział w Polsce",
+        "ul. Złota 59",
+        "00-120 Warszawa",
+        "tel. 22 34 74 032"
+      ],
+      "krs": "0000302998",
+      "notification_received": "2007-10-18",
+      "operations_start": "2008-07-17",
+      "scope": [
+        "1, 2, 4, 6, 7, 8, 9, 10, 12 wg Załącznika I do Dyrektywy 2006/48/WE"
+      ]
+    },
+    {
+      "name": "Hoist Finance AB (publ)",
+      "home_country": "Szwecja",
+      "supervisor": "Finansinspektionen",
+      "polish_branch": [
+        "Hoist Finance AB (publ) Spółka Akcyjna Oddział w Polsce",
+        "ul. Gen. Józefa Bema 2",
+        "50-265 Wrocław"
+      ],
+      "krs": "0000810852",
+      "notification_received": "2020-08-12",
+      "operations_start": "2020-10-12",
+      "scope": [
+        "2 wg Załącznika I do Dyrektywy 2013/36/UE"
+      ]
+    },
+    {
+      "name": "HSBC Continental Europe (d.HSBC France Societe Anonyme)",
+      "home_country": "Francja",
+      "supervisor": "Authorité de Contrôle Prudentiel et de Résolution",
+      "polish_branch": [
+        "HSBC Continental Europe (Spółka Akcyjna) Oddział w Polsce",
+        "ul. Rondo ONZ 1",
+        "00-124 Warszawa"
+      ],
+      "krs": "0000757904",
+      "notification_received": "2018-12-04",
+      "operations_start": "2019-04-01",
+      "scope": [
+        "1, 2, 4 (4c, 4d, 4e), 6, 7 (7a, 7b, 7c, 7d, 7e), 8, 9 wg Załącznika I do Dyrektywy 2013/36/UE;",
+        "świadczenie usług przewidzianych w Sekcji A w punktach 1, 2, 3, 6, 7 w odniesieniu do instrumentów finansowych przewidzianych w Sekcji C w punktach 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 oraz świadczenie usług przewidzianych w Sekcji B w punkcie 3 w odniesieniu do instrumentów finansowych przewidzianych w Sekcji C w punktach 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 Załącznika I do Dyrektywy 2014/65/UE;"
+      ]
+    },
+    {
+      "name": "Ikano Bank AB (publ) (do 21.07.2015 Ikano Bank GmbH)",
+      "home_country": "Szwecja",
+      "supervisor": "Finansinspektionen",
+      "polish_branch": [
+        "Ikano Bank AB (publ) Spółka Akcyjna Oddział w Polsce",
+        "ul. Postępu 14",
+        "02-676 Warszawa",
+        "tel. 22 43 15 600"
+      ],
+      "krs": "0000355541",
+      "notification_received": "2010-02-16",
+      "operations_start": "2010-07-01",
+      "scope": [
+        "2, 4 wg Załącznika I do Dyrektywy 2006/48/WE"
+      ]
+    },
+    {
+      "name": "Industrial and Commercial Bank of China (Europe) S.A.",
+      "home_country": "Luksemburg",
+      "supervisor": "Commision de Surveillance du Secteur Financier",
+      "polish_branch": [
+        "Industrial and Commercial Bank of China (Europe) S.A. (Spółka Akcyjna) Oddział w Polsce",
+        "ul. Plac Trzech Krzyży 18",
+        "00-499 Warszawa",
+        "tel. 22 278 80 01, 22 278 80 02"
+      ],
+      "krs": "0000420806",
+      "notification_received": "2012-02-14",
+      "operations_start": "2012-11-23",
+      "scope": [
+        "1, 2, 3, 4, 5, 6, 7 (7a, 7b, 7c, 7d, 7e), 8, 9, 10, 11, 12, 13, 14, 15 wg Załącznika I do Dyrektywy 2006/48/WE;",
+        "świadczenie usług przewidzianych w sekcji A w punktach 1, 2, 3, 4, 5, 6, 7 oraz w sekcji B w punktach 1, 2, 3, 4, 5, 6, 7 w odniesieniu do instrumentów finansowych przewidzianych w sekcji C w punktach 1, 2, 3, 4, 5, 6, 7 Załącznika I do Dyrektywy 2004/39/WE;"
+      ]
+    },
+    {
+      "name": "Intesa Sanpaolo S.p.A.",
+      "home_country": "Włochy",
+      "supervisor": "Banca d'Italia",
+      "polish_branch": [
+        "Intesa Sanpaolo S.p.A. Spółka Akcyjna Oddział w Polsce",
+        "ul. Książęca 4",
+        "00-498 Warszawa"
+      ],
+      "krs": "0000446973",
+      "notification_received": "2012-10-16",
+      "operations_start": "2013-03-01",
+      "scope": [
+        "1, 2, 4, 6, 7 (7a, 7b, 7c, 7d, 7e), 8, 9 wg Załącznika I do Dyrektywy 2006/48/WE"
+      ]
+    },
+    {
+      "name": "J.P. Morgan SE",
+      "home_country": "Niemcy",
+      "supervisor": "Bundesanstalt für Finanzdienstleistungsaufsicht",
+      "polish_branch": [
+        "J.P. Morgan SE (Spółka Europejska) Oddział w Polsce, Atrium Garden, ul. Jana Pawła II 19, 00-854 Warszawa"
+      ],
+      "krs": "0000764012",
+      "notification_received": "2018-12-19",
+      "operations_start": "2020-07-01",
+      "scope": [
+        "1, 2, 4 (4a, 4b, 4c, 4d, 4e, 4g), 5, 6, 7 (7b, 7e), 8, 9, 11 wg Załącznika I do Dyrektywy 2013/36/UE;",
+        "Świadczenie usług przewidzianych w Świadczenie usług przewidzianych w Sekcji A (1, 2, 3, 5, 6, 7) w odniesieniu do instrumentów finansowych przewidzianych w Sekcji C (1, 2, 3, 4) oraz świadczenie usług przewidzianych w Sekcji B (2, 3, 4, 5, 6) w odniesieniu do instrumentów finansowych przewidzianych w Sekcji C (1, 2, 3, 4) Załącznika wg Załącznika I do Dyrektywy 2014/65/UE;",
+        "Data wpływu modyfikacji notyfikacji: 12.04.2023 r.",
+        "Zakres przedmiotowy modyfikacji: 1, 2, 4 (4a, 4b, 4c, 4d, 4e, 4g), 5, 6, 7 (7b, 7c, 7d, 7e), 8, 9, 11 wg Załącznika I do Dyrektywy 2013/36/UE;",
+        "świadczenie usług przewidzianych w Świadczenie usług przewidzianych w Sekcji A (1, 2, 3, 5, 6, 7) w odniesieniu do instrumentów finansowych przewidzianych w Sekcji C (1, 2, 3, 4) oraz świadczenie usług przewidzianych w Sekcji B (2, 3, 4, 5, 6) w odniesieniu do instrumentów finansowych przewidzianych w Sekcji C (1, 2, 3, 4) wg Załącznika I do Dyrektywy 2004/39/WE;"
+      ]
+    },
+    {
+      "name": "John Deere Bank S.A.",
+      "home_country": "Luksemburg",
+      "supervisor": "Commision de Surveillance du Secteur Financier",
+      "polish_branch": [
+        "John Deere Bank S.A. Spółka Akcyjna Oddział w Polsce",
+        "ul. Kolorowa 2",
+        "60-198 Poznań",
+        "tel. 532 757 234"
+      ],
+      "krs": "0000688157",
+      "notification_received": "16.05.2017",
+      "operations_start": "2018-01-01",
+      "scope": [
+        "2 wg Załącznika I do Dyrektywy 2013/36/UE"
+      ]
+    },
+    {
+      "name": "KEB Hana Bank (D) AG",
+      "home_country": "Niemcy",
+      "supervisor": "Bundesanstalt für Finanzdienstleistungsaufsicht",
+      "polish_branch": [
+        "KEB Hana Bank (D) AG Spółka Akcyjna Oddział w Polsce",
+        "Retro Office",
+        "Marszałka Józefa Piłsudskiego 69",
+        "50-019 Wrocław"
+      ],
+      "krs": "1106640",
+      "notification_received": "2024-06-26",
+      "operations_start": "2025-12-11",
+      "scope": [
+        "1, 2, 4 (4c, 4d, 4f), 6 wg Załącznika I do Dyrektywy 2013/36/UE"
+      ]
+    },
+    {
+      "name": "Morgan Stanley Europe SE",
+      "home_country": "Niemcy",
+      "supervisor": "Bundesanstalt für Finanzdienstleistungsaufsicht",
+      "polish_branch": [
+        "Morgan Stanley Europe SE (Spółka Europejska) Oddział w Polsce",
+        "ul. Współna 62, p. II",
+        "00-684 Warszawa",
+        "tel. 22 213 99 20"
+      ],
+      "krs": "0000762695",
+      "notification_received": "2022-09-01",
+      "operations_start": "2022-11-01",
+      "scope": [
+        "świadczenie usług przewidzianych w Sekcji A w punktach 6, 7 w odniesieniu do instrumentu finansowego przewidzianego w Sekcji C w punktach 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 oraz świadczenie usługi przewidzianej w Sekcji B w punktach 3, 5, 6 w odniesieniu do instrumentu finansowego przewidzianego w Sekcji C w punktach 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 Załącznika I do Dyrektywy 2014/65/UE;"
+      ]
+    },
+    {
+      "name": "Nordea Bank Abp",
+      "home_country": "Finlandia",
+      "supervisor": "Finanssivalvonta",
+      "polish_branch": [
+        "Nordea Bank Abp Spółka Akcyjna Oddział w Polsce",
+        "ul. Aleja Marszałka Edwarda Śmigłego-Rydza 20",
+        "93-281 Łódź"
+      ],
+      "krs": "0000360398",
+      "notification_received": "2018-08-27",
+      "operations_start": "2018-10-02",
+      "scope": [
+        "2, 3, 4 (4a, 4b, 4c, 4d, 4e 4f, 4g), 7 (7b, 7c, 7d), 5, 12 wg Załącznika I do Dyrektywy 2013/36/UE"
+      ]
+    },
+    {
+      "name": "Raiffeisen Bank International AG",
+      "home_country": "Austria",
+      "supervisor": "Financial Market Authority",
+      "polish_branch": [
+        "Raiffeisen Bank International AG (Spółka Akcyjna) Oddział w Polsce",
+        "ul. Plac Konesera 8",
+        "03-736 Warszawa"
+      ],
+      "krs": "0000753494",
+      "notification_received": "2018-08-29",
+      "operations_start": "2018-11-05",
+      "scope": [
+        "2, 4 (4c, 4d), 7 (7a, 7b), 12 wg Załącznika I do Dyrektywy 2013/36/UE;",
+        "świadczenie usług przewidzianych w Sekcji A w punkcie 3 w odniesieniu do instrumentów finansowych przewidzianych w Sekcji C w punkcie 2 oraz świadczenie usług przewidzianych w Sekcji B w punkcie 1 w odniesieniu do instrumentów finansowych przewidzianych w Sekcji C w punktach 1, 2, 3 Załącznika I do Dyrektywy 2014/65/UE;"
+      ]
+    },
+    {
+      "name": "RCI Banque S.A. (nazwa handlowa: MOBILIZE FINANCIAL SERVICES)",
+      "home_country": "Francja",
+      "supervisor": "Authorité de Contrôle Prudentiel et de Résolution",
+      "polish_branch": [
+        "RCI Banque Spółka Akcyjna Oddział w Polsce",
+        "ul. Marynarska 13",
+        "02-674 Warszawa"
+      ],
+      "krs": "0000430770",
+      "notification_received": "2012-06-06",
+      "operations_start": "2013-02-01",
+      "scope": [
+        "2, 3, 4, 5, 6 wg Załącznika I do Dyrektywy 2006/48/WE"
+      ]
+    },
+    {
+      "name": "Skandinaviska Enskilda Banken AB",
+      "home_country": "Szwecja",
+      "supervisor": "Finansinspektionen",
+      "polish_branch": [
+        "Skandinaviska Enskilda Banken AB (Spółka Akcyjna) Oddział w Polsce",
+        "ul. Żelazna 51/53, p. VII",
+        "00-841 Warszawa",
+        "tel. 22 395 80 00"
+      ],
+      "krs": "0000257884",
+      "notification_received": "2006-03-28",
+      "operations_start": "2006-10-02",
+      "scope": [
+        "1, 2, 3, 4, 6, 7 (7a, 7b, 7c, 7d, 7e), 10, 11 wg Załącznika I do Dyrektywy 2006/48/WE;",
+        "świadczenie usług przewidzianych w sekcji A w punktach 2, 3 oraz w sekcji B w punktach 4, 7 w odniesieniu do instrumentów finansowych przewidzianych w sekcji C w punktach 1, 2, 4, 5, 6 7, 10 Załącznika I do Dyrektywy 2004/39/WE;"
+      ]
+    },
+    {
+      "name": "Société Générale Societe Anonyme [Societe Generale Societe Anonyme]",
+      "home_country": "Francja",
+      "supervisor": "Authorité de Contrôle Prudentiel et de Résolution",
+      "polish_branch": [
+        "\"Societe Generale\" Spółka Akcyjna Oddział w Polsce",
+        "ul. Łucka 9",
+        "00-842 Warszawa",
+        "tel. 22 528 40 00"
+      ],
+      "krs": "0000099264",
+      "notification_received": "2004-05-01",
+      "operations_start": "2004-05-01",
+      "scope": [
+        "1, 2, 3, 4, 5, 6 , 7 (7a, 7b, 7c, 7d, 7e), 8, 9, 10, 11, 12, 13, 14 wg Załącznika I do Dyrektywy 2006/48/WE;",
+        "świadczenie usług przewidzianych w sekcji A w punktach 1, 2, 3, 5, 7 oraz w sekcji B w punktach 1, 2, 3, 4, 5, 7 w odniesieniu do instrumentów finansowych przewidzianych w sekcji C w punktach 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 Załącznika I do Dyrektywy 2004/39/WE;"
+      ]
+    },
+    {
+      "name": "Trade Republic Bank GmbH",
+      "home_country": "Niemcy",
+      "supervisor": "Bundesanstalt für Finanzdienstleistungsaufsicht",
+      "polish_branch": [
+        "Trade Republic Bank GmbH sp. z o.o. Oddział w Polsce",
+        "Spaces Marszałkowska",
+        "ul. Marszałkowska 126/134, 1 piętro",
+        "00-008 Warszawa"
+      ],
+      "krs": "1174214",
+      "notification_received": "2024-10-11",
+      "operations_start": "2025-09-11",
+      "scope": [
+        "1, 4 (4a, 4b, 4c, 4d, 4f), 12 wg Załącznika do Dyrektywy 2013/36/UE"
+      ]
+    },
+    {
+      "name": "U.S. BANK EUROPE Designated Activity Company (d. Elavon Financial Services Designated Activity Company (d.Elavon Financial Services Limited))",
+      "home_country": "Irlandia",
+      "supervisor": "Central Bank of Ireland",
+      "polish_branch": [
+        "U.S. Bank Europe Designated Activity Company (Spółka z ograniczoną odpowiedzialnością o wyznaczonym przedmiocie działalności) Oddział w Polsce (d.Elavon Financial Services Desiganated Activity Company (Spółka z organiczoną odpowiedzialnością o wyznaczonym przedmiocie działalności) Oddział w Polsce)",
+        "ul. Puławska 17",
+        "02-515 Warszawa",
+        "tel. 22 306 03 16, 22 381 30 00"
+      ],
+      "krs": "0000287836",
+      "notification_received": "2007-05-10",
+      "operations_start": "2007-12-01",
+      "scope": [
+        "1, 2, 3, 4, 5, 6, 7 (7a, 7b, 7c, 7d, 7e) wg Załącznika I do Dyrektywy 2006/48/WE"
+      ]
+    },
+    {
+      "name": "UniCredit S.p.A.",
+      "home_country": "Włochy",
+      "supervisor": "Banca d'Italia/ Europejski Bank Centralny",
+      "polish_branch": [
+        "UniCredit S.p.A. Spółka Akcyjna II Oddział w Polsce",
+        "ul. Dobra 40",
+        "00-334 Warszawa"
+      ],
+      "krs": "1268305",
+      "notification_received": "2026-09-28",
+      "operations_start": "2026-11-01",
+      "scope": [
+        "1, 2, 3, 4 (4a, 4b, 4c, 4d, 4e, 4f, 4g, 4h) 5, 6, 7 (7a, 7b, 7c, 7d, 7e), 8, 9, 10, 11 ,12, 13, 14, 15 wg Załącznika I do Dyrektywy 2013/36/UE; Świadczenie usług przewidzianych w Sekcji A (1, 2, 3, 4, 5, 7) w odniesieniu do instrumentu finansowego przewidzianego w Sekcji C (1, 2, 3); świadczenie usługi przewidzianej w Sekcji A (6) w odniesieniu do instrumentu finansowego przewidzianego w Sekcji C ( 3); świadczenie usług przewidzianych w Sekcji A (3, 4) w odniesieniu do instrumentu finansowego przewidzianego w Sekcji C (4) oraz świadczenie usług przewidzianych w Sekcji B (1, 4, 5 ) w odniesieniu do instrumentów finansowych przewidzianych w Sekcji C (1, 2); a także świadczenie usług przewidzianych w Sekcji B (1, 2, 3, 4, 5, 6) w odniesieniu do instrumentu finansowego przewidzianego w Sekcji C (3) wg Załącznika I do Dyrektywy 2014/65/UE"
+      ]
+    },
+    {
+      "name": "Volkswagen Bank GMBH",
+      "home_country": "Niemcy",
+      "supervisor": "Bundesanstalt für Finanzdienstleistungsaufsicht",
+      "polish_branch": [
+        "Volkswagen Bank GmbH Sp. z o.o. Oddział w Polsce",
+        "ul. Rondo Organizacji Narodów Zjednoczonych 1",
+        "00-124 Warszawa"
+      ],
+      "krs": "0000737500",
+      "notification_received": "11.04.2018",
+      "operations_start": "2018-09-28",
+      "scope": [
+        "1, 2, 4 (4a, 4b, 4c, 4d, 4e, 4f, 4g), 6 wg Załącznika I do Dyrektywy 2013/36/UE"
+      ]
+    },
+    {
+      "name": "Woori Bank Europe GmbH",
+      "home_country": "Niemcy",
+      "supervisor": "Bundesanstalt für Finanzdienstleistungsaufsicht",
+      "polish_branch": [
+        "Woori Bank Europe GmbH sp. z o.o. Oddział w Polsce",
+        "ul. Postępu 21A",
+        "02-676 Warszawa"
+      ],
+      "krs": "0001117202",
+      "notification_received": "2024-06-11",
+      "operations_start": "2025-04-01",
+      "scope": [
+        "1, 2, 4 (4c, 4d), 6 wg Załącznika I do Dyrektywy 2013/36/UE"
+      ]
+    }
+  ]
+}

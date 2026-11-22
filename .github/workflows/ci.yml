@@ -1,0 +1,104 @@
+name: CI
+
+# Order: security gate first (supply chain, secrets), then lint and unit tests, then build and an end-to-end smoke test.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  security:
+    name: Security (dependencies, secrets)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # gitleaks scans the whole history
+      - uses: astral-sh/setup-uv@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Dependency audit (pip-audit for every uv project, npm audit)
+        run: scripts/audit.sh
+      - name: Secrets in git history (gitleaks)
+        run: >
+          docker run --rm -v "$PWD:/repo:ro"
+          -e GIT_CONFIG_COUNT=1 -e GIT_CONFIG_KEY_0=safe.directory -e GIT_CONFIG_VALUE_0=/repo
+          zricethezav/gitleaks:v8.21.2 detect --source /repo --redact --no-banner
+      - name: Known vulnerabilities and secrets in lockfiles (Trivy)
+        run: >
+          docker run --rm -v "$PWD:/repo:ro" aquasec/trivy:0.58.1 fs --no-progress --scanners vuln,secret
+          --severity HIGH,CRITICAL --ignore-unfixed --exit-code 1 --skip-dirs "**/node_modules" /repo
+
+  python:
+    name: Python (${{ matrix.project }})
+    needs: security
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        project: [backend, orchestrator, demo/seed, demo/collect]
+        lint: ["."]
+        fmt: ["."]
+        include:
+          # the scraper predates our formatting: lint everything, format-check only our own files
+          - { project: scraper, lint: "app tests", fmt: "app/landing.py tests" }
+    defaults:
+      run:
+        working-directory: ${{ matrix.project }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+          cache-dependency-glob: ${{ matrix.project }}/uv.lock
+      - run: uv sync --frozen
+      - run: uv run ruff check ${{ matrix.lint }}
+      - run: uv run ruff format --check ${{ matrix.fmt }}
+      - run: uv run pytest -q
+        env:
+          DATABASE_URL: postgresql://ci:ci@localhost/ci # tests never connect; the variable only has to exist
+
+  frontend:
+    name: Frontend
+    needs: security
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+      # the static demo (demo/dashboard-static) is committed: it must match a fresh build
+      - run: npm run build:demo
+      - run: test -z "$(git status --porcelain -- ../demo/dashboard-static)" || { git status --short -- ../demo/dashboard-static; echo "rebuild with npm run build:demo and commit"; exit 1; }
+
+  stack:
+    name: Build and smoke test
+    needs: [python, frontend]
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compose file is valid
+        run: cp .env.example .env && docker compose config -q
+      - name: Build, start with the mock model, run all assets, check the API
+        run: scripts/smoke.sh

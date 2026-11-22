@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>InvestAlert — podgląd zebranych danych</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --panel: #fff; --ink: #1d2433; --muted: #667085; --line: #e4e7ec; --accent: #2f6fde;
+    --m1: #2f6fde; --m2: #12855b; --m3: #c2410c; --warn: #b42318;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; background: var(--bg); color: var(--ink); }
+  header { position: sticky; top: 0; z-index: 5; background: var(--panel); border-bottom: 1px solid var(--line); padding: 10px 18px; }
+  h1 { font-size: 16px; margin: 0 12px 0 0; display: inline-block; }
+  .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .chips { margin-top: 8px; }
+  .chip { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; padding: 2px 10px; font-size: 12px; color: var(--muted); }
+  .chip b { color: var(--ink); font-weight: 600; }
+  select, input, button { font: inherit; padding: 5px 8px; border: 1px solid var(--line); border-radius: 6px; background: #fff; color: var(--ink); }
+  button { cursor: pointer; }
+  button.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .tabs button { border-radius: 6px 6px 0 0; }
+  .tabs button.active { background: var(--ink); color: #fff; border-color: var(--ink); }
+  main { padding: 16px 18px 40px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 14px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+  .card h3 { margin: 0; font-size: 15px; overflow-wrap: anywhere; }
+  .card h3 a { color: var(--ink); text-decoration: none; }
+  .card h3 a:hover { text-decoration: underline; }
+  .meta { color: var(--muted); font-size: 12px; overflow-wrap: anywhere; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 600; padding: 1px 7px; border-radius: 4px; background: #eef1f6; color: var(--ink); }
+  .badge.registry_ads { background: #e5eefc; color: var(--m1); }
+  .badge.firm_marketing { background: #e3f4ec; color: var(--m2); }
+  .badge.shadow_advisory { background: #fdece3; color: var(--m3); }
+  .excerpt { white-space: pre-wrap; overflow-wrap: anywhere; color: #344054; max-height: 7.5em; overflow: hidden; }
+  .thumbs { display: flex; gap: 8px; flex-wrap: wrap; }
+  .thumb { position: relative; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; background: #fafafa; cursor: zoom-in; }
+  .thumb img { display: block; height: 120px; width: auto; max-width: 260px; object-fit: cover; object-position: top; }
+  .thumb span { position: absolute; left: 0; bottom: 0; background: rgba(16,24,40,.75); color: #fff; font-size: 10px; padding: 1px 5px; border-top-right-radius: 4px; }
+  .thumb.missing { padding: 8px; font-size: 11px; color: var(--muted); cursor: default; }
+  .card footer { display: flex; justify-content: space-between; align-items: center; margin-top: auto; }
+  .pager { display: flex; gap: 8px; align-items: center; justify-content: center; margin: 18px 0; }
+  .empty { text-align: center; color: var(--muted); padding: 60px 0; }
+  table { border-collapse: collapse; width: 100%; background: var(--panel); }
+  th, td { border-bottom: 1px solid var(--line); padding: 6px 8px; text-align: left; vertical-align: top; font-size: 13px; overflow-wrap: anywhere; }
+  th { color: var(--muted); font-weight: 600; font-size: 12px; background: #fafbfc; position: sticky; top: 0; }
+  .status-finished { color: var(--m2); font-weight: 600; } .status-failed { color: var(--warn); font-weight: 600; }
+  .status-running { color: var(--accent); font-weight: 600; } .status-queued { color: var(--muted); }
+  dialog { border: none; border-radius: 12px; padding: 0; width: min(1100px, 96vw); max-height: 92vh; box-shadow: 0 20px 60px rgba(0,0,0,.3); }
+  dialog::backdrop { background: rgba(16,24,40,.55); }
+  .dlg-head { position: sticky; top: 0; background: var(--panel); border-bottom: 1px solid var(--line); padding: 12px 16px; display: flex; justify-content: space-between; gap: 12px; z-index: 2; }
+  .dlg-body { padding: 14px 16px 24px; }
+  .dlg-body h4 { margin: 18px 0 6px; font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+  .kv { display: grid; grid-template-columns: 180px 1fr; gap: 4px 12px; }
+  .kv div:nth-child(odd) { color: var(--muted); }
+  pre { white-space: pre-wrap; overflow-wrap: anywhere; background: #f8f9fb; border: 1px solid var(--line); border-radius: 6px; padding: 10px; max-height: 420px; overflow: auto; font-size: 12px; margin: 0; }
+  .shots { display: flex; gap: 12px; flex-wrap: wrap; align-items: flex-start; }
+  .shots figure { margin: 0; }
+  .shots img { max-height: 420px; max-width: 100%; border: 1px solid var(--line); border-radius: 6px; cursor: zoom-in; }
+  .shots figcaption { font-size: 11px; color: var(--muted); margin-top: 3px; }
+  #lightbox { position: fixed; inset: 0; background: rgba(0,0,0,.85); display: none; align-items: flex-start; justify-content: center; overflow: auto; z-index: 50; cursor: zoom-out; padding: 20px; }
+  #lightbox img { max-width: 100%; background: #fff; }
+  .err { color: var(--warn); }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <div class="row">
+    <h1>InvestAlert — podgląd danych</h1>
+    <div class="tabs row">
+      <button data-tab="posts" class="active">Posty</button>
+      <button data-tab="jobs">Joby</button>
+    </div>
+    <span style="flex:1"></span>
+    <label class="meta"><input type="checkbox" id="auto"> odświeżaj co 30 s</label>
+    <button id="refresh">Odśwież</button>
+  </div>
+  <div class="row chips" id="stats"></div>
+  <div class="row chips" id="filters">
+    <select id="task">
+      <option value="">wszystkie moduły</option>
+      <option value="registry_ads">M1 — reklamy (registry_ads)</option>
+      <option value="firm_marketing">M2 — materiały firm (firm_marketing)</option>
+      <option value="shadow_advisory">M3 — shadow advisory</option>
+    </select>
+    <select id="source">
+      <option value="">wszystkie źródła</option>
+      <option>web</option><option>youtube</option><option>telegram</option><option>substack</option>
+      <option>reddit</option><option>wykop</option>
+    </select>
+    <input id="q" type="search" placeholder="szukaj: tytuł, treść, URL, autor" size="32">
+    <label class="meta">od <input id="since" type="date"></label>
+    <select id="per">
+      <option>12</option><option selected>24</option><option>48</option><option>96</option>
+    </select>
+    <button class="primary" id="apply">Filtruj</button>
+  </div>
+</header>
+
+<main>
+  <section id="posts-view">
+    <div class="meta" id="total"></div>
+    <div class="grid" id="grid"></div>
+    <div class="pager">
+      <button id="prev">← poprzednie</button>
+      <span class="meta" id="page"></span>
+      <button id="next">następne →</button>
+    </div>
+  </section>
+  <section id="jobs-view" hidden>
+    <table>
+      <thead><tr>
+        <th>utworzony</th><th>task</th><th>źródło</th><th>wyzwalacz</th><th>status</th><th>zapytania</th>
+        <th>widziane / nowe / zmienione</th><th>pominięte</th><th>błędy</th>
+      </tr></thead>
+      <tbody id="jobs"></tbody>
+    </table>
+  </section>
+</main>
+
+<dialog id="dlg">
+  <div class="dlg-head">
+    <div><div id="dlg-title" style="font-weight:600"></div><div class="meta" id="dlg-sub"></div></div>
+    <button id="dlg-close">Zamknij ✕</button>
+  </div>
+  <div class="dlg-body" id="dlg-body"></div>
+</dialog>
+<div id="lightbox"><img alt=""></div>
+
+<script>
+const MODULES = { registry_ads: "M1 reklamy", firm_marketing: "M2 materiały firm", shadow_advisory: "M3 shadow advisory" };
+const $ = (s) => document.querySelector(s);
+const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const fmt = (d) => d ? new Date(d).toLocaleString("pl-PL", { dateStyle: "short", timeStyle: "short" }) : "—";
+const num = (n) => n == null ? "—" : Number(n).toLocaleString("pl-PL");
+let offset = 0, total = 0, timer = null;
+
+async function api(path) {
+  const r = await fetch(path);
+  if (!r.ok) throw new Error(`${path}: HTTP ${r.status}`);
+  return r.json();
+}
+
+function mediaLabel(m) {
+  if (m.kind === "screenshot") return m.source_url.startsWith("screenshot:mobile") ? "zrzut mobile" : "zrzut desktop";
+  return m.kind === "thumbnail" ? "miniatura" : "obraz";
+}
+function sortMedia(list) {
+  const rank = (m) => m.kind === "screenshot" ? (m.source_url.startsWith("screenshot:desktop") ? 0 : 1) : 2;
+  return [...list].sort((a, b) => rank(a) - rank(b));
+}
+function thumbs(media) {
+  return sortMedia(media).map((m) => m.api_url
+    ? `<div class="thumb" data-full="${esc(m.api_url)}"><img loading="lazy" src="${esc(m.api_url)}" alt=""><span>${esc(mediaLabel(m))}</span></div>`
+    : `<div class="thumb missing">${esc(mediaLabel(m))}: brak pliku</div>`).join("");
+}
+function badges(p) {
+  return `<span class="badge">${esc(p.platform)}</span> ` +
+    p.tasks.map((t) => `<span class="badge ${esc(t)}">${esc(MODULES[t] || t)}</span>`).join(" ");
+}
+
+async function loadStats() {
+  try {
+    const s = await api("/stats");
+    const parts = [`<span class="chip">posty: <b>${num(s.posts)}</b></span>`];
+    for (const [k, v] of Object.entries(s.by_task)) parts.push(`<span class="chip">${esc(MODULES[k] || k)}: <b>${num(v)}</b></span>`);
+    for (const [k, v] of Object.entries(s.by_platform)) parts.push(`<span class="chip">${esc(k)}: <b>${num(v)}</b></span>`);
+    for (const [k, v] of Object.entries(s.media_by_kind)) parts.push(`<span class="chip">media ${esc(k)}: <b>${num(v)}</b></span>`);
+    for (const [k, v] of Object.entries(s.jobs_by_status)) parts.push(`<span class="chip">joby ${esc(k)}: <b>${num(v)}</b></span>`);
+    $("#stats").innerHTML = parts.join("");
+  } catch (e) { $("#stats").innerHTML = `<span class="err">${esc(e.message)}</span>`; }
+}
+
+async function loadPosts() {
+  const per = Number($("#per").value);
+  const params = new URLSearchParams({ limit: per, offset });
+  for (const id of ["task", "source", "q"]) if ($("#" + id).value.trim()) params.set(id, $("#" + id).value.trim());
+  if ($("#since").value) params.set("since", $("#since").value + "T00:00:00");
+  try {
+    const data = await api("/posts?" + params);
+    total = data.total;
+    $("#total").textContent = `${num(total)} rekordów`;
+    $("#page").textContent = total ? `${offset + 1}–${Math.min(offset + per, total)} z ${num(total)}` : "";
+    $("#prev").disabled = offset === 0;
+    $("#next").disabled = offset + per >= total;
+    $("#grid").innerHTML = data.items.length ? data.items.map(card).join("") : `<div class="empty">Brak rekordów dla tych filtrów.</div>`;
+  } catch (e) { $("#grid").innerHTML = `<div class="empty err">${esc(e.message)}</div>`; }
+}
+
+function card(p) {
+  const text = (p.content || p.transcript || "").slice(0, 600);
+  const eng = Object.entries(p.engagement || {}).filter(([, v]) => v != null).map(([k, v]) => `${k}: ${num(v)}`).join(" · ");
+  return `<article class="card">
+    <div>${badges(p)}</div>
+    <h3><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title || p.url)}</a></h3>
+    <div class="meta">${esc(p.author_display_name || p.author_handle || "—")}${p.author_followers ? ` · ${num(p.author_followers)} obs.` : ""}
+      · opublikowano ${fmt(p.published_at)} · zebrano ${fmt(p.scraped_at)}${eng ? " · " + esc(eng) : ""}</div>
+    ${text ? `<div class="excerpt">${esc(text)}</div>` : ""}
+    ${p.media.length ? `<div class="thumbs">${thumbs(p.media)}</div>` : `<div class="meta">brak mediów</div>`}
+    <footer>
+      <span class="meta">#${p.id} · ${esc(p.lang || "?")} · zapytania: ${esc(p.queries.join(" | ")).slice(0, 160)}</span>
+      <button data-details="${p.id}">Szczegóły</button>
+    </footer>
+  </article>`;
+}
+
+async function showDetails(id) {
+  const dlg = $("#dlg");
+  $("#dlg-title").textContent = "Wczytywanie…"; $("#dlg-sub").textContent = ""; $("#dlg-body").innerHTML = "";
+  dlg.showModal();
+  try {
+    const d = await api(`/posts/${id}/details`);
+    $("#dlg-title").innerHTML = esc(d.title || d.url);
+    $("#dlg-sub").innerHTML = `${badges(d)} · <a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.url)}</a>`;
+    const kv = (o) => `<div class="kv">${Object.entries(o).map(([k, v]) => `<div>${esc(k)}</div><div>${v}</div>`).join("")}</div>`;
+    const files = sortMedia(d.media_files);
+    const shots = files.filter((m) => m.api_url).map((m) =>
+      `<figure><img src="${esc(m.api_url)}" data-full="${esc(m.api_url)}" alt=""><figcaption>${esc(mediaLabel(m))} · ${esc(m.content_type || "")} · ${num(m.size_bytes)} B<br><a href="${esc(m.api_url)}" target="_blank" rel="noopener">otwórz plik</a> · <code>${esc(m.url)}</code></figcaption></figure>`).join("");
+    const table = (rows, cols) => rows.length
+      ? `<table><thead><tr>${cols.map((c) => `<th>${esc(c[0])}</th>`).join("")}</tr></thead><tbody>${rows.map((r) => `<tr>${cols.map((c) => `<td>${c[1](r)}</td>`).join("")}</tr>`).join("")}</tbody></table>`
+      : `<div class="meta">brak</div>`;
+    $("#dlg-body").innerHTML = `
+      <h4>Media (${files.length})</h4><div class="shots">${shots || '<span class="meta">brak plików w storage</span>'}</div>
+      <h4>Pola rekordu</h4>${kv({
+        "id": d.id, "platforma": esc(d.platform), "external_id": esc(d.external_id), "typ mediów": esc(d.media_type),
+        "autor": esc(d.author_display_name || ""), "handle": esc(d.author_handle || ""),
+        "URL autora": d.author_url ? `<a href="${esc(d.author_url)}" target="_blank" rel="noopener">${esc(d.author_url)}</a>` : "—",
+        "obserwujący": num(d.author_followers), "język": esc(d.lang || "—"), "opublikowano": fmt(d.published_at),
+        "zebrano": fmt(d.scraped_at), "ostatnio widziany": fmt(d.last_seen_at), "transkrypcja": esc(d.transcript_status),
+        "pierwszy task": esc(d.first_task), "pierwsze zapytanie": esc(d.first_query), "pierwszy job": esc(d.first_job_id || "—"),
+        "content_hash": `<code>${esc(d.content_hash)}</code>`,
+        "zaangażowanie": esc(Object.entries(d.engagement || {}).map(([k, v]) => `${k}: ${v ?? "—"}`).join(", ") || "—"),
+      })}
+      <h4>Treść (${num((d.content || "").length)} znaków)</h4><pre>${esc(d.content || "—")}</pre>
+      ${d.transcript ? `<h4>Transkrypcja</h4><pre>${esc(d.transcript)}</pre>` : ""}
+      <h4>Linki wychodzące (${d.outbound_links.length})</h4>
+      ${d.outbound_links.length ? `<pre>${d.outbound_links.map((u) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u)}</a>`).join("\n")}</pre>` : '<div class="meta">brak</div>'}
+      <h4>Trafienia: moduł / zapytanie (post_hits)</h4>${table(d.hits, [
+        ["moduł", (h) => `<span class="badge ${esc(h.task)}">${esc(MODULES[h.task] || h.task)}</span>`], ["zapytanie", (h) => esc(h.query)],
+        ["job", (h) => `<code>${esc((h.job_id || "").slice(0, 8))}</code>`], ["pierwszy raz", (h) => fmt(h.first_seen_at)], ["ostatnio", (h) => fmt(h.last_seen_at)]])}
+      <h4>Wersje treści (post_versions)</h4>${table(d.versions, [
+        ["zapisano", (v) => fmt(v.captured_at)], ["tytuł", (v) => esc(v.title || "")], ["znaki treści", (v) => num(v.content_chars)],
+        ["znaki transkrypcji", (v) => num(v.transcript_chars)], ["hash", (v) => `<code>${esc(v.content_hash.slice(0, 12))}</code>`]])}
+      <h4>Pliki mediów (media)</h4>${table(files, [
+        ["rodzaj", (m) => esc(mediaLabel(m))], ["źródło", (m) => esc(m.source_url)], ["typ", (m) => esc(m.content_type || "—")],
+        ["rozmiar", (m) => num(m.size_bytes)], ["plik", (m) => m.api_url ? `<a href="${esc(m.api_url)}" target="_blank" rel="noopener">otwórz</a>` : '<span class="err">brak</span>']])}
+      <h4>raw (JSON)</h4><details><summary class="meta">pokaż</summary><pre>${esc(JSON.stringify(d.raw, null, 2))}</pre></details>`;
+  } catch (e) { $("#dlg-body").innerHTML = `<div class="err">${esc(e.message)}</div>`; }
+}
+
+async function loadJobs() {
+  try {
+    const jobs = await api("/jobs?limit=200");
+    $("#jobs").innerHTML = jobs.map((j) => {
+      const st = j.stats || {};
+      const skipped = ["skipped_language", "skipped_not_owner", "skipped_registered_owner"]
+        .filter((k) => st[k]).map((k) => `${k.replace("skipped_", "")}: ${st[k]}`).join(", ");
+      const errs = (j.errors || []).length;
+      return `<tr>
+        <td>${fmt(j.created_at)}</td><td><span class="badge ${esc(j.task)}">${esc(MODULES[j.task] || j.task)}</span></td>
+        <td>${esc(j.source || "—")}</td><td>${esc(j.trigger)}</td><td class="status-${esc(j.status)}">${esc(j.status)}</td>
+        <td>${j.queries_done}/${j.queries_total}</td><td>${j.posts_seen} / ${j.posts_new} / ${j.posts_changed}</td>
+        <td class="meta">${esc(skipped || "—")}</td>
+        <td>${errs ? `<details><summary class="err">${errs}</summary><pre>${esc(JSON.stringify(j.errors, null, 2))}</pre></details>` : "—"}</td></tr>`;
+    }).join("") || `<tr><td colspan="9" class="empty">Brak jobów.</td></tr>`;
+  } catch (e) { $("#jobs").innerHTML = `<tr><td colspan="9" class="err">${esc(e.message)}</td></tr>`; }
+}
+
+function refresh() {
+  loadStats();
+  if (!$("#posts-view").hidden) loadPosts(); else loadJobs();
+}
+
+document.addEventListener("click", (e) => {
+  const full = e.target.closest("[data-full]");
+  if (full) { $("#lightbox img").src = full.dataset.full; $("#lightbox").style.display = "flex"; return; }
+  const det = e.target.closest("[data-details]");
+  if (det) showDetails(det.dataset.details);
+  const tab = e.target.closest("[data-tab]");
+  if (tab) {
+    document.querySelectorAll("[data-tab]").forEach((b) => b.classList.toggle("active", b === tab));
+    $("#posts-view").hidden = tab.dataset.tab !== "posts";
+    $("#jobs-view").hidden = tab.dataset.tab !== "jobs";
+    $("#filters").style.display = tab.dataset.tab === "posts" ? "" : "none";
+    refresh();
+  }
+});
+$("#lightbox").addEventListener("click", () => { $("#lightbox").style.display = "none"; });
+$("#dlg-close").addEventListener("click", () => $("#dlg").close());
+$("#apply").addEventListener("click", () => { offset = 0; loadPosts(); });
+$("#q").addEventListener("keydown", (e) => { if (e.key === "Enter") { offset = 0; loadPosts(); } });
+$("#prev").addEventListener("click", () => { offset = Math.max(0, offset - Number($("#per").value)); loadPosts(); });
+$("#next").addEventListener("click", () => { offset += Number($("#per").value); loadPosts(); });
+$("#refresh").addEventListener("click", refresh);
+$("#auto").addEventListener("change", (e) => {
+  clearInterval(timer);
+  if (e.target.checked) timer = setInterval(refresh, 30000);
+});
+document.addEventListener("keydown", (e) => { if (e.key === "Escape") $("#lightbox").style.display = "none"; });
+refresh();
+</script>
+</body>
+</html>

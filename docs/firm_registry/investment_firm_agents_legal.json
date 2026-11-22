@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title_pl": "Agenci firm inwestycyjnych - osoby prawne i jednostki organizacyjne",
+    "url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/agenci_firm_inwestycyjnych_osoby_prawne",
+    "source": "Komisja Nadzoru Finansowego (KNF)",
+    "retrieved": "2026-11-22",
+    "entry_count": 26,
+    "complete": true,
+    "note": "Parsed by scraper app.registry.knf; struck-through text stored in former_* fields."
+  },
+  "entries": [
+    {
+      "name": "BANK OCHRONY ŚRODOWISKA S.A.",
+      "investment_firm": "Dom Maklerski Banku Ochrony Środowiska S.A.",
+      "address": "ul. Żelazna 32 00-832 Warszawa",
+      "registered_on": "2006-05-31"
+    },
+    {
+      "name": "BUSINESSWISE SP. Z O.O. SP.K.",
+      "investment_firm": "EVO Dom Maklerski S.A.",
+      "address": "ul. Jana Pankiewicza 3 00-696 Warszawa",
+      "registered_on": "2020-02-14"
+    },
+    {
+      "name": "CAPITAL ASSETS ADVISORS SP. Z O.O.",
+      "investment_firm": "Dom Maklerski BDM S.A.",
+      "address": "ul. Borowska 272 50-588 Wrocław",
+      "registered_on": "21.03.2025 - zawieszenie wykonywania czynności w okresie 01.05.2026-28.02.2027"
+    },
+    {
+      "name": "ERSTE SECURITIES POLSKA S.A.",
+      "investment_firm": "Erste Group Bank AG z siedzibą w Wiedniu",
+      "address": "ul.Królewska 16 00-103 Warszawa tel.: 22 538-62-00 fax: 22 538-62-02",
+      "registered_on": "2013-10-24"
+    },
+    {
+      "name": "EXPANDER ADVISORS SP. Z O.O.",
+      "investment_firm": "Ipopema Securities S.A.",
+      "address": "ul. Inflancka 4B 00-189 Warszawa",
+      "registered_on": "2016-02-15"
+    },
+    {
+      "name": "F-TRUST IWEALTH S.A.",
+      "investment_firm": "Caspar Asset Management S.A.",
+      "address": "ul. Półwiejska 32 61-888 Poznań",
+      "registered_on": "2011-12-20"
+    },
+    {
+      "name": "FINANCEWELL SP. Z O.O.",
+      "investment_firm": "EVO Dom Maklerski S.A.",
+      "address": "ul. Górskiego 9 00-033 Warszawa",
+      "registered_on": "2016-09-29"
+    },
+    {
+      "name": "FINANCEWELL SP. Z O.O. SP.K.",
+      "investment_firm": "EVO Dom Maklerski S.A.",
+      "address": "ul. Górskiego 9 00-033 Warszawa",
+      "registered_on": "2017-03-16"
+    },
+    {
+      "name": "FUNDSPACE SP. Z O.O.",
+      "investment_firm": "Q Securities S.A.",
+      "address": "ul. Armii Ludowej 26 00-609 Warszawa",
+      "registered_on": "2017-09-21"
+    },
+    {
+      "name": "iMERCADO AFI SP. Z O.O.",
+      "investment_firm": "iX Asset Management S.A.",
+      "address": "ul.Warecka 11a 00-034 Warszawa",
+      "registered_on": "2017-02-20"
+    },
+    {
+      "name": "J. SAFRA SARASIN POLSKA SP. Z O.O.",
+      "investment_firm": "Banque J. Safra Sarasin (Luxembourg) S.A. z siedzibą w Luksemburgu",
+      "address": "ul. Poznańska 37 00-689 Warszawa",
+      "registered_on": "25.01.2019"
+    },
+    {
+      "name": "KWLM INWESTYCJE SP. Z O.O.",
+      "investment_firm": "EVO Dom Maklerski S.A.",
+      "address": "ul.Marszałkowska 9/15 lok.65A 00-696 Warszawa",
+      "registered_on": "2016-10-13"
+    },
+    {
+      "name": "KZ INWESTYCJE SP. Z O.O.SP.K.",
+      "investment_firm": "Ipopema Securities S.A.",
+      "address": "ul. Śląska 17 81-319 Gdynia",
+      "registered_on": "2019-09-20"
+    },
+    {
+      "name": "MUSCARI CAPITAL SP. Z O.O.",
+      "investment_firm": "Ipopema Securities S.A.",
+      "address": "ul. Prożna 9 00-107 Warszawa",
+      "registered_on": "2016-08-08"
+    },
+    {
+      "name": "NOVO FINANCE SP. Z O.O.",
+      "investment_firm": "Ipopema Securities S.A.",
+      "address": "ul. Jana Kilińskiego 28 08-110 Siedlce",
+      "registered_on": "2018-11-08"
+    },
+    {
+      "name": "ONTIMAGO SP. Z O.O.",
+      "investment_firm": "Ipopema Securities S.A.",
+      "address": "Al. Jana Pawła II 80/36 00-175 Warszawa",
+      "registered_on": "2018-11-16"
+    },
+    {
+      "name": "PHINANCE S.A.",
+      "investment_firm": "Ipopema Securities S.A.",
+      "address": "ul. Franciszka Ratajczaka 19 61-814 Poznań",
+      "registered_on": "2019-06-28"
+    },
+    {
+      "name": "Private Investments sp. z o.o. (dawny Private Wealth Consulting sp. z o.o.)",
+      "investment_firm": "iX Asset Management S.A.",
+      "address": "ul. Świętokrzyska 30/63 00-116 Warszawa",
+      "registered_on": "2016-08-10"
+    },
+    {
+      "name": "PRP PRIVATE IDEAS SP. Z O.O.",
+      "investment_firm": "Ipopema Securities S.A.",
+      "address": "ul.Dobrowoja 11 04-003 Warszawa",
+      "registered_on": "2018-11-30"
+    },
+    {
+      "name": "RAYMOND JAMES CEE SP. Z O.O.",
+      "investment_firm": "Raymond James France SAS z siedzibą w Paryżu",
+      "address": "ul. Wiejska 18/11 00-490 Warszawa tel.: 22 276-23-00 fax: 22 276-23-09",
+      "registered_on": "2020-09-30"
+    },
+    {
+      "name": "STAFORD SP.Z O.O. GLOBALNEJ INNOWACJI SP.K.",
+      "investment_firm": "Q Securities S.A.",
+      "address": "Pl.Jana Henryka Dąbrowskiego 1 00-057 Warszawa",
+      "registered_on": "2018-03-23"
+    },
+    {
+      "name": "STARFUNDS SP. Z O.O.",
+      "investment_firm": "Trigon Dom Maklerski S.A.",
+      "address": "ul. Nieszawska 1 61-021 Poznań",
+      "registered_on": "2023-09-29"
+    },
+    {
+      "name": "TEKTON CAPITAL SP. Z O.O.",
+      "investment_firm": "Q Securities S.A.",
+      "address": "ul. Knyszyńska 16A/2 80-180 Gdańsk",
+      "registered_on": "2019-05-23"
+    },
+    {
+      "name": "TRÓJMIEJSKA KANCELARIA FINANSOWA 1 SP. Z O.O.SP.K.",
+      "investment_firm": "Q Securities S.A.",
+      "address": "ul. I Armii Wojska Polskiego 10/B4 81-383 Gdynia",
+      "registered_on": "2017-03-08"
+    },
+    {
+      "name": "Upper Finance Investment sp. z o.o.",
+      "investment_firm": "Q Securities S.A.",
+      "address": "ul.Wioślarska 10/5 00-411 Warszawa",
+      "registered_on": "2018-09-25"
+    },
+    {
+      "name": "VALUE INVEST SP. Z O.O.",
+      "investment_firm": "Ipopema Securities S.A.",
+      "address": "ul.Marszałkowska 89 00-693 Warszawa",
+      "registered_on": "2019-07-10"
+    }
+  ]
+}

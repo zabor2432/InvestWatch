@@ -1,0 +1,16 @@
+# Test bez klucza: docker compose -f docker-compose.yml -f demo/mock-llm/mock.yml up --build
+# Atrapa API System One (heurystyki słów kluczowych), do sprawdzenia samego pipeline'u.
+x-mock-env: &mock-env
+  TYPESAFE_BASE_URL: http://mockllm:5566
+  JEV_MODEL: mock-llm
+
+services:
+  mockllm:
+    image: docker.io/library/python:3.12-slim
+    command: python /mock/mockllm.py
+    volumes: ["./demo/mock-llm:/mock:ro"]
+  dagster-daemon:
+    environment: *mock-env
+    depends_on: [mockllm]
+  dagster-webserver:
+    environment: *mock-env

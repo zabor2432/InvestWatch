@@ -1,0 +1,111 @@
+# firm_marketing (module 2): marketing materials published by the KNF-listed firms themselves.
+# Brands = brand_aliases.json (every brand there is verified in the KNF registry). Only content whose owner
+# is the firm is stored: web pages on the firm's own domains, YouTube videos from a channel named after the firm.
+#
+# Web queries, in this order (rotated by MAX_QUERIES_PER_RUN):
+#   1. every URL from `pages` - fetched directly (no search engine), rendered and screenshotted;
+#   2. "site:<first domain> <phrase>" for every brand x every phrase in `site_phrases`;
+#   3. "site:<domain> <phrase>" for the other registered investment firms (`registry_site_phrases`).
+# YouTube queries: every brand's first alias x every template in `youtube_templates`.
+# Domains: added to the brand's `domains` from brand_aliases.json; a subdomain matches its parent domain.
+# Every page was checked live on 2026-11-21 (status, redirect stays on the firm's domain). Pages answering 403 to
+# plain HTTP (bot walls: Plus500, Trading 212, Admirals, Revolut, FxPro, ...) are kept - the browser fallback renders
+# them. A page that later breaks is skipped without failing the job.
+
+site_phrases:
+  - "promocja"
+  - "bonus"
+  - "oferta specjalna"
+  - "zysk"
+  - "zacznij inwestować"
+  - "konto inwestycyjne"
+
+# the other registered investment firms with a known domain (registry / firm_domains.json, mostly cross-border):
+# "site:<domain> <phrase>" for each phrase, after all brand queries
+registry_site_phrases:
+  - "inwestycje"
+
+youtube_templates:
+  - "{alias}"
+  - "{alias} promocja"
+
+# Brands from brand_aliases.json (module 1 list: retail brands, incl. cross-border firms - an extension of the
+# module 2 scope, which is "firms registered in Poland incl. Polish branches of foreign firms").
+sites:
+  XTB: {domains: [xtb.com], pages: ["https://www.xtb.com/pl"]}
+  mBank: {domains: [mbank.pl], pages: ["https://www.mbank.pl/indywidualny/inwestycje/"]}
+  DM BOŚ: {domains: [bossa.pl, bosbank.pl], pages: ["https://bossa.pl/"]}
+  PKO BP: {domains: [pkobp.pl], pages: ["https://www.pkobp.pl/", "https://www.bm.pkobp.pl/"]}
+  Pekao: {domains: [pekao.com.pl], pages: ["https://www.pekao.com.pl/"]}
+  Erste / Santander: {domains: [santander.pl, erste.pl], pages: ["https://www.erste.pl/klient-indywidualny"]}
+  ING: {domains: [ing.pl], pages: ["https://www.ing.pl/"]}
+  Alior: {domains: [aliorbank.pl], pages: ["https://www.aliorbank.pl/"]}
+  Millennium: {domains: [bankmillennium.pl], pages: ["https://www.bankmillennium.pl/"]}
+  BNP Paribas: {domains: [bnpparibas.pl], pages: ["https://www.bnpparibas.pl/"]}
+  VeloBank: {domains: [velobank.pl], pages: ["https://www.velobank.pl/"]}
+  Citi Handlowy: {domains: [citibank.pl, citihandlowy.pl], pages: ["https://www.citihandlowy.pl/"]}
+  OANDA TMS: {domains: [oanda.com, tms.pl], pages: ["https://www.tms.pl/"]}
+  Noble Securities: {domains: [noblesecurities.pl], pages: ["https://noblesecurities.pl/"]}
+  Michael/Ström: {domains: [michaelstrom.pl], pages: ["https://michaelstrom.pl/"]}
+  Trigon: {domains: [trigon.pl], pages: ["https://trigon.pl/"]}
+  CMC Markets: {domains: [cmcmarkets.com], pages: ["https://www.cmcmarkets.com/pl-pl/"]}
+  IG: {domains: [ig.com], pages: ["https://www.ig.com/pl"]}
+  LYNX: {domains: [lynxbroker.pl], pages: ["https://www.lynxbroker.pl/"]}
+  Finax: {domains: [finax.eu], pages: ["https://www.finax.eu/pl"]}
+  Bitpanda: {domains: [bitpanda.com], pages: ["https://www.bitpanda.com/pl"]}
+  eToro: {domains: [etoro.com], pages: ["https://www.etoro.com/pl/"]}
+  Plus500: {domains: [plus500.com], pages: ["https://www.plus500.com/pl/"]}
+  Trading 212: {domains: [trading212.com], pages: ["https://www.trading212.com/pl"]}
+  Interactive Brokers: {domains: [interactivebrokers.com, interactivebrokers.ie, interactivebrokers.eu, ibkr.com], pages: ["https://www.interactivebrokers.ie/"]}
+  XEMARKETS (Trading Point): {domains: [xm.com], pages: ["https://www.xm.com/pl"]}
+  Admirals: {domains: [], pages: ["https://admirals.com/pl"]}
+  Revolut: {domains: [revolut.com], pages: ["https://www.revolut.com/pl-PL/"]}
+  Freedom24: {domains: [], pages: ["https://freedom24.com/?site_lang=pl"]}
+  Capital.com: {domains: [], pages: ["https://capital.com/pl-pl"]}
+  Swissquote: {domains: [swissquote.com], pages: ["https://www.swissquote.com/"]}
+  Pepperstone: {domains: [pepperstone.com], pages: ["https://pepperstone.com/en-eu/"]}
+  Tickmill: {domains: [], pages: ["https://www.tickmill.com/pl"]}
+  FxPro: {domains: [], pages: ["https://www.fxpro.pl/"]}
+  IC Markets: {domains: [], pages: ["https://www.icmarkets.eu/pl/"]}
+  Exness: {domains: [exness.com, exness.eu], pages: ["https://www.exness.eu/pl/"]}
+  NAGA: {domains: [], pages: ["https://naga.com/pl"]}
+  Lightyear: {domains: [lightyear.com], pages: ["https://lightyear.com/"]}
+  Robinhood: {domains: [robinhood.com], pages: ["https://robinhood.com/eu/pl/"]}
+  Dukascopy: {domains: [dukascopy.com], pages: ["https://www.dukascopy.com/swiss/pl/home/"]}
+  Skilling: {domains: [skilling.com], pages: ["https://skilling.com/eu/pl/"]}
+  ThinkMarkets: {domains: [], pages: ["https://www.thinkmarkets.com/pl/"]}
+  FXCM / Tradu: {domains: [], pages: ["https://www.tradu.com/pl/"]}
+  BUX Markets / Stryk: {domains: [bux.com], pages: ["https://bux.com/"]}
+  AvaTrade: {domains: [avatrade.com, avatrade.pl], pages: ["https://www.avatrade.pl/"]}
+  Conotoxia / Cinkciarz: {domains: [], pages: ["https://cinkciarz.pl/"]}
+  Saxo: {domains: [home.saxo, saxobank.com], pages: ["https://www.home.saxo/pl-pl"]}
+  flatexDEGIRO: {domains: [degiro.pl, degiro.com, flatex.com], pages: ["https://www.degiro.pl/"]}
+  Trade Republic: {domains: [traderepublic.com], pages: ["https://traderepublic.com/pl-pl"]}
+  # firms registered in Poland added to brand_aliases.json (scope: registered_in_poland); domains found via search
+  # on 2026-11-21 and checked live - the KNF registry itself has no websites
+  "AIXON Investment Management": {domains: [aixon.im], pages: ["https://aixon.im/"]}
+  "Caspar Asset Management": {domains: [caspar.com.pl], pages: ["https://www.caspar.com.pl/"]}
+  "Ceres Dom Inwestycyjny": {domains: [ceresdi.pl], pages: ["https://www.ceresdi.pl/"]}
+  "CVI Dom Maklerski": {domains: [cvi.pl], pages: ["https://cvi.pl/pl/"]}
+  "DI Nehrebetius": {domains: [nehrebetius.pl], pages: ["http://nehrebetius.pl/"]}
+  "DI Xelion": {domains: [xelion.pl], pages: ["https://xelion.pl/"]}
+  "DM AFS": {domains: [dmafs.pl], pages: ["https://dmafs.pl/"]}
+  "DM BDM": {domains: [bdm.pl, bdm.com.pl], pages: ["https://www.bdm.pl/"]}
+  "DM INC": {domains: [dminc.pl, inc.pl], pages: ["https://www.dminc.pl/"]}
+  "DM Navigator": {domains: [dmnavigator.pl, navigatorcapital.pl], pages: ["https://dmnavigator.pl/"]}
+  "DDPP Securities": {domains: [ddpps.com.pl, ddpp.com.pl], pages: ["https://ddpps.com.pl/pl/"]}
+  "Everest Investment Management": {domains: [everestinvestments.com], pages: ["https://dm.everestinvestments.com/"]}
+  "EVO DM": {domains: [evodm.pl], pages: ["https://www.evodm.pl/"]}
+  "IFDS DM": {domains: [ifds.com.pl], pages: ["https://ifds.com.pl/"]}
+  "IPOPEMA Securities": {domains: [ipopemasecurities.pl, ipopema.pl], pages: ["https://ipopemasecurities.pl/"]}
+  "IX Asset Management": {domains: [ixam.pl], pages: ["https://ixam.pl/"]}
+  "LFI DM": {domains: [lfi-dm.pl, lfi.pl], pages: ["https://lfi-dm.pl/"]}
+  "NWAI DM": {domains: [nwai.pl], pages: ["https://nwai.pl/"]}
+  "PGE DM": {domains: [dmpge.pl], pages: ["https://dmpge.pl/"]}
+  "Q Securities": {domains: [qsecurities.com, qsecurities.pl], pages: ["https://qsecurities.com/pl/"]}
+  "Convera": {domains: [convera.com], pages: ["https://convera.com/pl"]}
+  "EXANTE (EXT Ltd)": {domains: [exante.eu, ext.com.pl, ext.com.cy], pages: ["https://pl.exante.eu/", "https://ext.com.pl/"]}
+  "InstaForex / ForexMart (Instant Trading EU)": {domains: [instaforex.eu, forexmart.eu], pages: ["https://www.instaforex.eu/pl/", "https://www.forexmart.eu/"]}
+  "Jefferies": {domains: [jefferies.com], pages: ["https://www.jefferies.com/"]}
+  "Tradition": {domains: [tradition.com, traditionespana.com], pages: ["https://www.tradition.com/"]}
+  "WOOD & Company": {domains: [wood.com, wood.cz], pages: ["https://wood.com/"]}

@@ -1,0 +1,40 @@
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/jetbrains-mono";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 244 245 247;
+  --surface: 255 255 255;
+  --raised: 238 240 243;
+  --line: 214 218 224;
+  --fg: 20 24 31;
+  --muted: 95 105 120;
+  --accent: 29 78 216;
+  --risk-low: 21 128 61;
+  --risk-mid: 180 83 9;
+  --risk-high: 185 28 28;
+  --c1: 29 78 216;
+  --c2: 124 58 237;
+  --c3: 13 148 136;
+}
+.dark {
+  --bg: 13 16 21;
+  --surface: 20 24 31;
+  --raised: 30 36 46;
+  --line: 48 56 69;
+  --fg: 232 236 242;
+  --muted: 148 160 178;
+  --accent: 96 165 250;
+  --risk-low: 74 222 128;
+  --risk-mid: 251 191 36;
+  --risk-high: 248 113 113;
+  --c1: 96 165 250;
+  --c2: 167 139 250;
+  --c3: 45 212 191;
+}
+html, body, #root { height: 100%; }
+body { @apply bg-bg text-fg font-sans text-sm antialiased; }
+*:focus-visible { @apply outline outline-2 outline-offset-1 outline-accent; }
+kbd { @apply rounded border border-line bg-raised px-1 font-mono text-xs text-muted; }
