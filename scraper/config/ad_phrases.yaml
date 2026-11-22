@@ -1,0 +1,6 @@
+# registry_ads (module 1): every alias from brand_aliases.json x every template.
+# {alias} is replaced by the alias as written in brand_aliases.json.
+templates:
+  - "{alias} kod promocyjny"
+  - "{alias} link w opisie"
+  - "{alias} współpraca"

@@ -1,0 +1,311 @@
+{
+  "$defs": {
+    "Advertiser": {
+      "properties": {
+        "handle": {
+          "description": "kanał, profil albo host strony",
+          "minLength": 1,
+          "title": "Handle",
+          "type": "string"
+        },
+        "name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Name"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        }
+      },
+      "required": [
+        "handle"
+      ],
+      "title": "Advertiser",
+      "type": "object"
+    },
+    "Image": {
+      "properties": {
+        "key": {
+          "description": "klucz obrazu w tym samym buckecie",
+          "minLength": 1,
+          "title": "Key",
+          "type": "string"
+        },
+        "sha256": {
+          "maxLength": 64,
+          "minLength": 64,
+          "title": "Sha256",
+          "type": "string"
+        },
+        "variant": {
+          "default": "original",
+          "enum": [
+            "desktop",
+            "mobile",
+            "tablet",
+            "original"
+          ],
+          "title": "Variant",
+          "type": "string"
+        },
+        "focus": {
+          "default": "page",
+          "description": "cała strona albo wycięty blok z informacją o ryzyku",
+          "enum": [
+            "page",
+            "risk"
+          ],
+          "title": "Focus",
+          "type": "string"
+        },
+        "width": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Width"
+        },
+        "height": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Height"
+        }
+      },
+      "required": [
+        "key",
+        "sha256"
+      ],
+      "title": "Image",
+      "type": "object"
+    },
+    "Manipulated": {
+      "description": "Kontrolowany wariant testowy (nie prawdziwy materiał): które reguły miał zepsuć i jak.",
+      "properties": {
+        "rules": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Rules",
+          "type": "array"
+        },
+        "recipe": {
+          "title": "Recipe",
+          "type": "string"
+        }
+      },
+      "required": [
+        "rules",
+        "recipe"
+      ],
+      "title": "Manipulated",
+      "type": "object"
+    },
+    "Observation": {
+      "description": "Obserwowana para: podmiot publikujący i reklamowana firma ('' gdy nie dotyczy).",
+      "properties": {
+        "advertiser": {
+          "$ref": "#/$defs/Advertiser"
+        },
+        "advertised_firm": {
+          "default": "",
+          "title": "Advertised Firm",
+          "type": "string"
+        }
+      },
+      "required": [
+        "advertiser"
+      ],
+      "title": "Observation",
+      "type": "object"
+    },
+    "Source": {
+      "properties": {
+        "system": {
+          "enum": [
+            "demo",
+            "scraper",
+            "manual"
+          ],
+          "title": "System",
+          "type": "string"
+        },
+        "platform": {
+          "description": "youtube, telegram, web, tradingview, ...",
+          "minLength": 1,
+          "title": "Platform",
+          "type": "string"
+        },
+        "external_id": {
+          "description": "stabilny identyfikator materiału u źródła",
+          "minLength": 1,
+          "title": "External Id",
+          "type": "string"
+        },
+        "url": {
+          "minLength": 1,
+          "title": "Url",
+          "type": "string"
+        }
+      },
+      "required": [
+        "system",
+        "platform",
+        "external_id",
+        "url"
+      ],
+      "title": "Source",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "schema_version": {
+      "const": 2,
+      "default": 2,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "source": {
+      "$ref": "#/$defs/Source"
+    },
+    "module": {
+      "enum": [
+        "third_party_ads",
+        "self_promotion",
+        "non_investment_companies"
+      ],
+      "title": "Module",
+      "type": "string"
+    },
+    "observation": {
+      "$ref": "#/$defs/Observation"
+    },
+    "published_at": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Published At"
+    },
+    "captured_at": {
+      "format": "date-time",
+      "title": "Captured At",
+      "type": "string"
+    },
+    "title": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Title"
+    },
+    "text": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Text"
+    },
+    "lang": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Lang"
+    },
+    "images": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Image"
+      },
+      "title": "Images",
+      "type": "array"
+    },
+    "label": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "etykieta referencyjna (naruszenie), tylko dane testowe",
+      "title": "Label"
+    },
+    "manipulated": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Manipulated"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "meta": {
+      "additionalProperties": true,
+      "default": {},
+      "title": "Meta",
+      "type": "object"
+    }
+  },
+  "required": [
+    "source",
+    "module",
+    "observation",
+    "captured_at"
+  ],
+  "title": "IntakeItem",
+  "type": "object"
+}

@@ -1,0 +1,8 @@
+{
+ "exported_at": "2026-11-22T01:10:26+00:00",
+ "posts": 17,
+ "jobs": 30,
+ "media_files": 42,
+ "media_bytes": 12220400,
+ "import": "docker compose run --rm -v ./data:/data scraper python -m app.dataset import /data/scraped/<name>"
+}

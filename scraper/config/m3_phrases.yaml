@@ -1,0 +1,33 @@
+# shadow_advisory (module 3): phrases that may indicate investment advice offered without a KNF licence.
+# Polish only; crypto deliberately excluded (Q5: crypto-assets are not always financial instruments).
+# These run first in every shadow_advisory job; names/domains from the KNF warning list,
+# KNF revoked licences and I-SCAN fill the remaining query budget.
+phrases:
+  # wealth management / family office / consulting
+  - "zarządzanie majątkiem klienta"
+  - "zarządzanie portfelem inwestycyjnym dla klientów"
+  - "family office Polska"
+  - "doradca inwestycyjny konsultacja"
+  - "doradztwo inwestycyjne indywidualne"
+  - "konsulting inwestycyjny"
+  - "niezależny doradca finansowy inwestycje"
+  - "prywatny doradca inwestycyjny"
+  - "wealth management Polska"
+  - "planowanie finansowe inwestycje konsultacja"
+  # recommendations to buy / sell / hold
+  - "rekomendacje kupna akcji"
+  - "jakie akcje kupić teraz"
+  - "sygnały giełdowe"
+  - "sygnały forex"
+  - "sygnały transakcyjne grupa"
+  - "portfel modelowy subskrypcja"
+  - "kopiuj moje transakcje"
+  - "grupa premium inwestycje"
+  - "płatna grupa inwestycyjna"
+  - "mentoring inwestycyjny"
+  - "mentoring tradingowy"
+  - "gwarantowany zysk inwestycja"
+  - "pomnóż kapitał inwestycja"
+  - "zarabiaj na giełdzie z nami"
+  - "inwestuj z ekspertem"
+  - "ułożę Ci portfel inwestycyjny"

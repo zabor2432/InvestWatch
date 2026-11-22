@@ -1,0 +1,258 @@
+{
+  "meta": {
+    "title_pl": "Notyfikacje zagranicznych firm inwestycyjnych z państw UE/EOG - działalność w formie oddziału",
+    "url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/notyfikowane_firmy_inwestycyjne_oddzialy",
+    "source": "Komisja Nadzoru Finansowego (KNF)",
+    "retrieved": "2026-11-21",
+    "entry_count": 10,
+    "pages_retrieved": 1,
+    "pages_total": 1,
+    "complete": true,
+    "note": "C/A/B codes refer to sections C, A and B of Annex I of Directive 2014/65/EU (MiFID II). The page also points to a separate list of foreign credit institutions with Polish branches."
+  },
+  "entries": [
+    {
+      "name": "CMC Markets Germany GmbH",
+      "registered_address": "Garden Tower, Neue Mainzer Str. 46-50, 60311 Frankfurt, Germany",
+      "home_country": "Niemcy",
+      "supervisor": "Federal Financial Supervisory Authority (BaFin)",
+      "krs_entry_date": "2019-09-04",
+      "financial_instruments_C": [
+        "4",
+        "5",
+        "9",
+        "10"
+      ],
+      "investment_services_A": [
+        "2",
+        "3"
+      ],
+      "polish_branch_address": "CMC Markets Germany GmbH sp. z o.o. Oddział w Polsce, ul. Emilii Plater 53, 00-113 Warszawa",
+      "polish_branch_phone": "22 160 56 00",
+      "notification_received": "2019-09-13"
+    },
+    {
+      "name": "Convera Europe Financial S.A.",
+      "registered_address": "OBH Building, sis 6B rue du Fort Niedergrunewald, L-2226 Luxembourg",
+      "home_country": "Luksemburg",
+      "supervisor": "Commission de Surveillance du Secteur Financier (CSSF)",
+      "krs_entry_date": "2022-10-05",
+      "financial_instruments_C": [
+        "4"
+      ],
+      "investment_services_A": [
+        "2",
+        "3",
+        "5"
+      ],
+      "additional_services_B": [
+        "1"
+      ],
+      "polish_branch_address": "Convera Europe Financial S.A. Oddział w Polsce, ul. Marszałkowska 89, 00-693 Warszawa",
+      "polish_branch_phone": "22 653 70 47",
+      "notification_received": "2023-05-02"
+    },
+    {
+      "name": "EXT Ltd",
+      "registered_address": "28 Oktovriou, 365 VASHIOTIS SEAFRONT BUILDING, Off. 102, 103, 501, 3107, Limassol, Cyprus",
+      "home_country": "Cypr",
+      "supervisor": "Cyprus Securities and Exchange Commission (CySEC)",
+      "krs_entry_date": "2024-07-26",
+      "financial_instruments_C": [
+        "1",
+        "3",
+        "4",
+        "9"
+      ],
+      "investment_services_A": [
+        "1",
+        "2"
+      ],
+      "polish_branch_address": "EXT sp. z o.o. oddział w Polsce, Emilii Plater 53, 00-113 Warszawa",
+      "polish_branch_phone": "533 455 688; 22 263 03 13",
+      "notification_received": "2024-10-30"
+    },
+    {
+      "name": "Finax, o.c.p., a.s.",
+      "registered_address": "Bajkalska 19B, 82101 Bratislava",
+      "home_country": "Słowacja",
+      "supervisor": "Narodna Banka Slovenska (NBS)",
+      "krs_entry_date": "2022-03-07",
+      "financial_instruments_C": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "investment_services_A": [
+        "1 (C3)",
+        "4",
+        "5"
+      ],
+      "polish_branch_address": "Finax, o.c.p., a.s., Spółka Akcyjna, Oddział w Polsce, Bagatela 15/84, 00-585 Warszawa",
+      "polish_branch_phone": "22 104 09 08",
+      "notification_received": "2021-11-09"
+    },
+    {
+      "name": "IG Europe GmbH",
+      "registered_address": "Westhafenplatz 1, 60327 Frankfurt",
+      "home_country": "Niemcy",
+      "supervisor": "Federal Financial Supervisory Authority (BaFin)",
+      "krs_entry_date": "2024-07-29",
+      "financial_instruments_C": [
+        "1",
+        "4",
+        "5",
+        "6",
+        "10",
+        "11"
+      ],
+      "investment_services_A": [
+        "1",
+        "2",
+        "3"
+      ],
+      "additional_services_B": [
+        "1",
+        "4",
+        "5",
+        "7"
+      ],
+      "polish_branch_address": "IG Europe GmbH Oddział w Polsce, Kapelanka 42B, 30-347 Kraków",
+      "polish_branch_phone": "12 376 2000",
+      "notification_received": "2024-03-15"
+    },
+    {
+      "name": "Instant Trading EU Ltd.",
+      "registered_address": "23A, Spetson, leda Court, Block B, office b203, Mesa Geitonia, Cy-4000 Limassol, Cypr",
+      "home_country": "Cypr",
+      "supervisor": "Cyprus Securities and Exchange Commission (CySEC)",
+      "krs_entry_date": "2020-09-14",
+      "financial_instruments_C": [
+        "9"
+      ],
+      "investment_services_A": [
+        "1"
+      ],
+      "additional_services_B": [
+        "5"
+      ],
+      "polish_branch_address": "Instant Trading EU LTD sp. z o.o. Oddział w Polsce, ul. Jana Karola Chodkiewicza 61, 85-667 Bydgoszcz",
+      "polish_branch_phone": "22 153 01 23",
+      "notification_received": "2020-02-11"
+    },
+    {
+      "name": "Jefferies GmbH",
+      "registered_address": "Bockenheimer Landstrasse 24, 60323 Frankfurt am Main",
+      "home_country": "Niemcy",
+      "supervisor": "Federal Financial Supervisory Authority (BaFin)",
+      "krs_entry_date": "2021-12-03",
+      "financial_instruments_C": [
+        "1"
+      ],
+      "investment_services_A": [
+        "6",
+        "7"
+      ],
+      "additional_services_B": [
+        "3",
+        "5",
+        "6"
+      ],
+      "polish_branch_address": "Jefferies GmbH sp. z o.o., Oddział w Polsce, Ul. Senatorska 2, 00-075 Warszawa",
+      "polish_branch_phone": "667 633 999; 515 155 155",
+      "notification_received": "2021-11-19"
+    },
+    {
+      "name": "LYNX B.V.",
+      "registered_address": "Herengracht 527, 1017 BV, Amsterdam",
+      "home_country": "Holandia",
+      "supervisor": "Autoriteit Financiële Markten (AFM)",
+      "financial_instruments_C": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "investment_services_A": [
+        "1"
+      ],
+      "polish_branch_address": "LYNX B.V. – Oddział w Polsce, ul. Krucza 50, 00-025 Warszawa",
+      "polish_branch_phone": "22 307 64 12",
+      "notification_received": "2026-06-19"
+    },
+    {
+      "name": "Tradition Financial Services España, Sociedad De Valores, S.A.U.",
+      "registered_address": "Paseo De La Castellana, 31, 6th Floor, 28046, Madrid",
+      "home_country": "Hiszpania",
+      "supervisor": "Comision Nacional Del Mercado De Valores (CNMV)",
+      "krs_entry_date": "2022-05-24",
+      "financial_instruments_C": [
+        "1",
+        "2",
+        "3 (A1)",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "10"
+      ],
+      "investment_services_A": [
+        "1",
+        "2"
+      ],
+      "polish_branch_address": "Tradition Financial Services España Sociedad De Valores S.A.U. Oddział W Polsce, Ul. Plac Trzech Krzyży 10/14, 00-499 Warszawa",
+      "polish_branch_phone": "22 529 29 00",
+      "notification_received": "2021-12-21"
+    },
+    {
+      "name": "WOOD & Company Financial Services a.s.",
+      "registered_address": "Namesti Republiky 1079/1a, 110 00 Praque 1",
+      "home_country": "Czechy",
+      "supervisor": "Czech National Bank (CNB)",
+      "krs_entry_date": "2009-06-09",
+      "financial_instruments_C": [
+        "1",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "investment_services_A": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "6",
+        "7"
+      ],
+      "additional_services_B": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "6"
+      ],
+      "polish_branch_address": "WOOD & Company Financial Services, a.s. Spółka Akcyjna Oddział w Polsce, Centrum Marszałkowska 7 p., Ul. Marszałkowska 126/134, 00-008 Warszawa",
+      "polish_branch_phone": "22/222-15-30/70; fax 22/222-15-31/28/29",
+      "notification_received": "2008-12-17"
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "meta": {
+    "title_pl": "Banki prowadzące działalność maklerską",
+    "url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/Banki_prowadzace_dzialalnosc_maklerska",
+    "source": "Komisja Nadzoru Finansowego (KNF)",
+    "retrieved": "2026-11-21",
+    "entry_count": 10,
+    "note": "scope_codes refer to KNF's 'Zakres działalności wynikający z przepisów ustawy o obrocie instrumentami finansowymi' (PDF linked on the page). Where the page lists several names (e.g. a bank merger), they are kept in other_names_as_listed; strike-through formatting is not visible in this source for this page."
+  },
+  "entries": [
+    {
+      "name": "ALIOR BANK S.A.",
+      "other_names_as_listed": [
+        "Biuro Maklerskie ALIOR Bank"
+      ],
+      "address": "ul. Chmielna 69, 00-801 Warszawa",
+      "phone": "12-370-74-00",
+      "fax": "22 555-23-13",
+      "license_date": "2008-09-05",
+      "scope_codes": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        9
+      ]
+    },
+    {
+      "name": "BANK HANDLOWY S.A.",
+      "other_names_as_listed": [
+        "Departament Maklerski Banku Handlowego"
+      ],
+      "address": "ul. Senatorska 16, 00-923 Warszawa",
+      "phone": "22 690-39-44",
+      "fax": null,
+      "license_date": "2007-11-13",
+      "scope_codes": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        9,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "name": "BANK MILLENNIUM S.A.",
+      "other_names_as_listed": [
+        "Biuro Maklerskie Banku Millennium"
+      ],
+      "address": "ul. Stanisława Żaryna 2a, 02-593 Warszawa",
+      "phone": "22 598-36-31; 22 598-10-50",
+      "fax": "22 598-10-58",
+      "license_date": "2005-01-04",
+      "scope_codes": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "name": "BANK PEKAO S.A. (BANK POLSKA KASA OPIEKI S.A.)",
+      "other_names_as_listed": [
+        "Biuro Maklerskie PEKAO"
+      ],
+      "address": "ul. Żubra 1, 01-066 Warszawa",
+      "phone": "22 821-87-70",
+      "fax": "22 821-87-71",
+      "license_date": "2007-10-10",
+      "scope_codes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "name": "BNP Paribas Bank Polska S.A.",
+      "other_names_as_listed": [
+        "Biuro Maklerskie BNP Paribas Bank Polska"
+      ],
+      "address": "ul. Grzybowska 78, 00-844 Warszawa",
+      "phone": "22 329-43-00",
+      "fax": null,
+      "license_date": "1992-02-21",
+      "scope_codes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        9,
+        14
+      ]
+    },
+    {
+      "name": "ERSTE BANK POLSKA S.A.",
+      "other_names_as_listed": [
+        "Erste Biuro Maklerskie",
+        "SANTANDER BANK POLSKA S.A.",
+        "Santander Biuro Maklerskie"
+      ],
+      "address": "Al. Jana Pawła II 17, 00-854 Warszawa (korespondencja: 60-198 Poznań, ul. Kolorowa 8)",
+      "phone": "61 856 48 80",
+      "fax": null,
+      "license_date": "1991-07-19",
+      "scope_codes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "name": "ING BANK ŚLĄSKI S.A.",
+      "other_names_as_listed": [
+        "Biuro Maklerskie ING Bank Śląski"
+      ],
+      "address": "ul. Puławska 2, 02-566 Warszawa",
+      "phone": "32 357 00 32",
+      "fax": "brak (korespondencja: biuromaklerskie-inspektor@ingbank.pl)",
+      "license_date": "2004-11-30",
+      "scope_codes": [
+        1,
+        2,
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "name": "mBANK S.A.",
+      "other_names_as_listed": [
+        "Biuro Maklerskie mBank"
+      ],
+      "address": "ul. Prosta 18, 00-850 Warszawa",
+      "phone": "22 697 47 00",
+      "fax": "22 697 48 20",
+      "license_date": "2005-06-30",
+      "scope_codes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "name": "POWSZECHNA KASA OSZCZĘDNOŚCI BANK POLSKI S.A. (PKO BP S.A.)",
+      "other_names_as_listed": [
+        "Biuro Maklerskie PKO Banku Polskiego"
+      ],
+      "address": "ul. Świętokrzyska 36, 00-116 Warszawa",
+      "phone": "22 521-80-10 /12",
+      "fax": "22 521-79-46",
+      "license_date": "1991-08-26",
+      "scope_codes": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "name": "VeloBank S.A.",
+      "other_names_as_listed": [
+        "Departament Maklerski VeloBank"
+      ],
+      "address": "Rondo Ignacego Daszyńskiego 2C, 00-843 Warszawa",
+      "phone": null,
+      "fax": null,
+      "license_date": "2026-02-26",
+      "scope_codes": [
+        1,
+        2,
+        5,
+        6,
+        9,
+        13
+      ]
+    }
+  ]
+}

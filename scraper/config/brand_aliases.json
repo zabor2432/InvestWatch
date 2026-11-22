@@ -1,0 +1,1498 @@
+{
+  "meta": {
+    "description": "Firms listed by KNF, used to build registry_ads queries (every alias x every template in ad_phrases.yaml) and, with config/m2_sources.yaml, firm_marketing queries. Also the list of registered owners whose own content registry_ads and shadow_advisory drop.",
+    "rules": [
+      "A brand is listed only when every firm in `registry` exists in a KNF register file in docs/firm_registry; firms absent from KNF are not searched for.",
+      "`aliases` come from the KNF pages (legal name without legal form, other/former names, 'nazwa handlowa'); `manual_aliases` are product or marketing names of the same firm (e.g. xStation = XTB platform) added by the team.",
+      "All aliases, short ones included, are used in queries. Matching is case- and diacritic-insensitive; `word_boundary_aliases` must match on word boundaries.",
+      "`domains` come from the KNF pages and are for matching outbound links.",
+      "Brands with `scope: registered_in_poland` complete the module 2 scope (all firms of brokerage_firms / foreign_investment_firms); their `manual_aliases` are short / brand names added by the team, their websites are in m2_sources.yaml."
+    ],
+    "notes": {
+      "Conotoxia / Cinkciarz": "KNF page: licence fully suspended by the Cypriot supervisor since 2025-07-23 — the firm may not provide investment services."
+    }
+  },
+  "brands": [
+    {
+      "brand": "XTB",
+      "query": true,
+      "aliases": [
+        "xtb",
+        "x-trade brokers"
+      ],
+      "manual_aliases": [
+        "xstation",
+        "xstation 5"
+      ],
+      "word_boundary_aliases": [
+        "xtb"
+      ],
+      "domains": [
+        "xtb.com"
+      ],
+      "registry": [
+        {
+          "file": "brokerage_firms.json",
+          "name": "XTB S.A."
+        },
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "XTB Ltd"
+        }
+      ]
+    },
+    {
+      "brand": "mBank",
+      "query": true,
+      "aliases": [
+        "mbank",
+        "biuro maklerskie mbank"
+      ],
+      "manual_aliases": [
+        "emakler",
+        "mbank emakler"
+      ],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_banks.json",
+          "name": "mBANK S.A."
+        }
+      ]
+    },
+    {
+      "brand": "DM BOŚ",
+      "query": true,
+      "aliases": [
+        "dom maklerski banku ochrony środowiska"
+      ],
+      "manual_aliases": [
+        "bossa",
+        "bossafx",
+        "dm boś"
+      ],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_firms.json",
+          "name": "DOM MAKLERSKI BANKU OCHRONY ŚRODOWISKA S.A."
+        }
+      ]
+    },
+    {
+      "brand": "PKO BP",
+      "query": true,
+      "aliases": [
+        "pko bp",
+        "powszechna kasa oszczędności bank polski",
+        "biuro maklerskie pko banku polskiego"
+      ],
+      "manual_aliases": [
+        "bm pko bp"
+      ],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_banks.json",
+          "name": "POWSZECHNA KASA OSZCZĘDNOŚCI BANK POLSKI S.A. (PKO BP S.A.)"
+        }
+      ]
+    },
+    {
+      "brand": "Pekao",
+      "query": true,
+      "aliases": [
+        "bank pekao",
+        "biuro maklerskie pekao",
+        "bank polska kasa opieki",
+        "pekao investment banking"
+      ],
+      "manual_aliases": [
+        "bm pekao"
+      ],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_banks.json",
+          "name": "BANK PEKAO S.A. (BANK POLSKA KASA OPIEKI S.A.)"
+        },
+        {
+          "file": "brokerage_firms.json",
+          "name": "PEKAO INVESTMENT BANKING S.A."
+        }
+      ]
+    },
+    {
+      "brand": "Erste / Santander",
+      "query": true,
+      "aliases": [
+        "erste bank polska",
+        "erste biuro maklerskie",
+        "santander bank polska",
+        "santander biuro maklerskie",
+        "erste securities polska"
+      ],
+      "manual_aliases": [
+        "santander bm"
+      ],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_banks.json",
+          "name": "ERSTE BANK POLSKA S.A."
+        },
+        {
+          "file": "brokerage_firms.json",
+          "name": "ERSTE SECURITIES POLSKA S.A."
+        }
+      ]
+    },
+    {
+      "brand": "ING",
+      "query": true,
+      "aliases": [
+        "ing bank śląski",
+        "biuro maklerskie ing bank śląski"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_banks.json",
+          "name": "ING BANK ŚLĄSKI S.A."
+        }
+      ]
+    },
+    {
+      "brand": "Alior",
+      "query": true,
+      "aliases": [
+        "alior bank",
+        "biuro maklerskie alior bank"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_banks.json",
+          "name": "ALIOR BANK S.A."
+        }
+      ]
+    },
+    {
+      "brand": "Millennium",
+      "query": true,
+      "aliases": [
+        "bank millennium",
+        "biuro maklerskie banku millennium"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_banks.json",
+          "name": "BANK MILLENNIUM S.A."
+        }
+      ]
+    },
+    {
+      "brand": "BNP Paribas",
+      "query": true,
+      "aliases": [
+        "bnp paribas bank polska",
+        "biuro maklerskie bnp paribas bank polska"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_banks.json",
+          "name": "BNP Paribas Bank Polska S.A."
+        }
+      ]
+    },
+    {
+      "brand": "VeloBank",
+      "query": true,
+      "aliases": [
+        "velobank",
+        "departament maklerski velobank"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_banks.json",
+          "name": "VeloBank S.A."
+        }
+      ]
+    },
+    {
+      "brand": "Citi Handlowy",
+      "query": true,
+      "aliases": [
+        "bank handlowy",
+        "departament maklerski banku handlowego"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_banks.json",
+          "name": "BANK HANDLOWY S.A."
+        }
+      ]
+    },
+    {
+      "brand": "OANDA TMS",
+      "query": true,
+      "aliases": [
+        "oanda tms brokers",
+        "tms brokers"
+      ],
+      "manual_aliases": [
+        "oanda"
+      ],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_firms.json",
+          "name": "OANDA TMS BROKERS S.A."
+        }
+      ]
+    },
+    {
+      "brand": "Noble Securities",
+      "query": true,
+      "aliases": [
+        "noble securities"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_firms.json",
+          "name": "NOBLE Securities S.A."
+        }
+      ]
+    },
+    {
+      "brand": "Michael/Ström",
+      "query": true,
+      "aliases": [
+        "michael/ström",
+        "michael/ström dom maklerski"
+      ],
+      "manual_aliases": [
+        "michael strom"
+      ],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_firms.json",
+          "name": "MICHAEL/STRÖM DOM MAKLERSKI S.A."
+        }
+      ]
+    },
+    {
+      "brand": "Trigon",
+      "query": true,
+      "aliases": [
+        "trigon dom maklerski"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_firms.json",
+          "name": "TRIGON DOM MAKLERSKI S.A."
+        }
+      ]
+    },
+    {
+      "brand": "CMC Markets",
+      "query": true,
+      "aliases": [
+        "cmc markets"
+      ],
+      "manual_aliases": [
+        "cmc"
+      ],
+      "word_boundary_aliases": [
+        "cmc"
+      ],
+      "domains": [],
+      "registry": [
+        {
+          "file": "foreign_investment_firms.json",
+          "name": "CMC Markets Germany GmbH"
+        }
+      ]
+    },
+    {
+      "brand": "IG",
+      "query": true,
+      "aliases": [
+        "ig europe",
+        "ig"
+      ],
+      "manual_aliases": [
+        "ig markets"
+      ],
+      "word_boundary_aliases": [
+        "ig"
+      ],
+      "domains": [],
+      "registry": [
+        {
+          "file": "foreign_investment_firms.json",
+          "name": "IG Europe GmbH"
+        },
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "IG Europe GmbH"
+        }
+      ]
+    },
+    {
+      "brand": "LYNX",
+      "query": true,
+      "aliases": [
+        "lynx"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [
+        "lynx"
+      ],
+      "domains": [],
+      "registry": [
+        {
+          "file": "foreign_investment_firms.json",
+          "name": "LYNX B.V."
+        },
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "Lynx B.V."
+        }
+      ]
+    },
+    {
+      "brand": "Finax",
+      "query": true,
+      "aliases": [
+        "finax"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "foreign_investment_firms.json",
+          "name": "Finax, o.c.p., a.s."
+        },
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "Finax o.c.p., a.s."
+        }
+      ]
+    },
+    {
+      "brand": "Bitpanda",
+      "query": true,
+      "aliases": [
+        "bitpanda"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "Bitpanda Financial Services GmbH"
+        }
+      ]
+    },
+    {
+      "brand": "eToro",
+      "query": true,
+      "aliases": [
+        "etoro",
+        "retailfx"
+      ],
+      "manual_aliases": [
+        "copytrader"
+      ],
+      "word_boundary_aliases": [],
+      "domains": [
+        "etoro.com"
+      ],
+      "registry": [
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "Etoro (Europe) Ltd"
+        }
+      ]
+    },
+    {
+      "brand": "Plus500",
+      "query": true,
+      "aliases": [
+        "plus500"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "Plus500CY Ltd"
+        },
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "Plus500EE AS"
+        }
+      ]
+    },
+    {
+      "brand": "Trading 212",
+      "query": true,
+      "aliases": [
+        "trading 212",
+        "fxflat"
+      ],
+      "manual_aliases": [
+        "trading212"
+      ],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "Trading 212 Markets Ltd"
+        },
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "Trading 212 Ltd"
+        },
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "Trading 212 EU GmbH"
+        }
+      ]
+    },
+    {
+      "brand": "Interactive Brokers",
+      "query": true,
+      "aliases": [
+        "interactive brokers"
+      ],
+      "manual_aliases": [
+        "ibkr"
+      ],
+      "word_boundary_aliases": [
+        "ibkr"
+      ],
+      "domains": [],
+      "registry": [
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "Interactive Brokers Ireland Ltd"
+        }
+      ]
+    },
+    {
+      "brand": "XEMARKETS (Trading Point)",
+      "query": true,
+      "aliases": [
+        "xemarkets",
+        "trading point of financial instruments"
+      ],
+      "manual_aliases": [
+        "xm",
+        "xm.com"
+      ],
+      "word_boundary_aliases": [
+        "xm"
+      ],
+      "domains": [],
+      "registry": [
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "Trading Point of Financial Instruments Ltd"
+        }
+      ]
+    },
+    {
+      "brand": "Admirals",
+      "query": true,
+      "aliases": [
+        "admirals",
+        "admiral markets"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [],
+      "domains": [
+        "admirals.com",
+        "admiralmarkets.com.cy"
+      ],
+      "registry": [
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "Admirals Europe Ltd"
+        },
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "Admiral Markets AS"
+        }
+      ]
+    },
+    {
+      "brand": "Revolut",
+      "query": true,
+      "aliases": [
+        "revolut",
+        "revolut securities"
+      ],
+      "manual_aliases": [
+        "revolut trading"
+      ],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "Revolut Securities Europe UAB"
+        }
+      ]
+    },
+    {
+      "brand": "Freedom24",
+      "query": true,
+      "aliases": [
+        "freedom24",
+        "freedom 24",
+        "freedom broker",
+        "freedom finance"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [],
+      "domains": [
+        "freedom24.com",
+        "freedom24.eu",
+        "freedom24.club",
+        "freedom24.news",
+        "freedombroker.eu",
+        "freedomfinance.eu",
+        "f24.to",
+        "ffineu.eu",
+        "bondsfreedom.com",
+        "tradernet.com"
+      ],
+      "registry": [
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "Freedom Finance Europe Ltd"
+        }
+      ]
+    },
+    {
+      "brand": "Capital.com",
+      "query": true,
+      "aliases": [
+        "capital.com",
+        "capital com"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [],
+      "domains": [
+        "capital.com"
+      ],
+      "registry": [
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "CAPITAL COM GROUP LTD"
+        },
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "Capital Com SV Investments Ltd"
+        }
+      ]
+    },
+    {
+      "brand": "Swissquote",
+      "query": true,
+      "aliases": [
+        "swissquote"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [],
+      "domains": [
+        "swissquote.cy",
+        "swissquote.eu"
+      ],
+      "registry": [
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "Swissquote Capital Markets Ltd"
+        }
+      ]
+    },
+    {
+      "brand": "Pepperstone",
+      "query": true,
+      "aliases": [
+        "pepperstone"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "Pepperstone EU Ltd"
+        }
+      ]
+    },
+    {
+      "brand": "Tickmill",
+      "query": true,
+      "aliases": [
+        "tickmill"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [],
+      "domains": [
+        "tickmill.com"
+      ],
+      "registry": [
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "Tickmill Europe Ltd"
+        }
+      ]
+    },
+    {
+      "brand": "FxPro",
+      "query": true,
+      "aliases": [
+        "fxpro"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [],
+      "domains": [
+        "fxpro.com",
+        "fxpro.pl"
+      ],
+      "registry": [
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "FXPRO Financial Services Ltd"
+        }
+      ]
+    },
+    {
+      "brand": "IC Markets",
+      "query": true,
+      "aliases": [
+        "ic markets"
+      ],
+      "manual_aliases": [
+        "icmarkets"
+      ],
+      "word_boundary_aliases": [],
+      "domains": [
+        "icmarkets.eu"
+      ],
+      "registry": [
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "IC Markets (EU) Ltd"
+        }
+      ]
+    },
+    {
+      "brand": "Exness",
+      "query": true,
+      "aliases": [
+        "exness"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "Exness (Cy) Ltd"
+        }
+      ]
+    },
+    {
+      "brand": "NAGA",
+      "query": true,
+      "aliases": [
+        "naga markets",
+        "naga"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [
+        "naga"
+      ],
+      "domains": [
+        "naga.com",
+        "nagamarkets.com"
+      ],
+      "registry": [
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "Naga Markets Europe Ltd"
+        }
+      ]
+    },
+    {
+      "brand": "Lightyear",
+      "query": true,
+      "aliases": [
+        "lightyear"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "Lightyear Europe AS"
+        }
+      ]
+    },
+    {
+      "brand": "Robinhood",
+      "query": true,
+      "aliases": [
+        "robinhood"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "Robinhood Europe, UAB"
+        }
+      ]
+    },
+    {
+      "brand": "Dukascopy",
+      "query": true,
+      "aliases": [
+        "dukascopy"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "Dukascopy Europe IBS AS"
+        }
+      ]
+    },
+    {
+      "brand": "Skilling",
+      "query": true,
+      "aliases": [
+        "skilling"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "Skilling Ltd"
+        }
+      ]
+    },
+    {
+      "brand": "ThinkMarkets",
+      "query": true,
+      "aliases": [
+        "thinkmarkets"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [],
+      "domains": [
+        "thinkmarkets.com"
+      ],
+      "registry": [
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "TF Global Markets (Europe) Ltd"
+        }
+      ]
+    },
+    {
+      "brand": "FXCM / Tradu",
+      "query": true,
+      "aliases": [
+        "fxcm",
+        "tradu"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [
+        "fxcm"
+      ],
+      "domains": [
+        "fxcm.com",
+        "tradu.com"
+      ],
+      "registry": [
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "Stratos Europe Limited"
+        }
+      ]
+    },
+    {
+      "brand": "BUX Markets / Stryk",
+      "query": true,
+      "aliases": [
+        "bux markets",
+        "stryk"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [],
+      "domains": [
+        "buxmarkets.eu",
+        "strykapp.com"
+      ],
+      "registry": [
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "Coinbase Financial Services Europe Ltd."
+        }
+      ]
+    },
+    {
+      "brand": "AvaTrade",
+      "query": true,
+      "aliases": [
+        "ava trade"
+      ],
+      "manual_aliases": [
+        "avatrade"
+      ],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "Ava Trade EU Ltd"
+        }
+      ]
+    },
+    {
+      "brand": "Conotoxia / Cinkciarz",
+      "query": true,
+      "aliases": [
+        "conotoxia",
+        "cinkciarz.pl"
+      ],
+      "manual_aliases": [
+        "cinkciarz"
+      ],
+      "word_boundary_aliases": [],
+      "domains": [
+        "conotoxia.com",
+        "cinkciarz.pl"
+      ],
+      "registry": [
+        {
+          "file": "foreign_investment_firms_without_branches.json",
+          "name": "Conotoxia Ltd"
+        }
+      ]
+    },
+    {
+      "brand": "Saxo",
+      "query": true,
+      "aliases": [
+        "saxo bank"
+      ],
+      "manual_aliases": [
+        "saxo"
+      ],
+      "word_boundary_aliases": [
+        "saxo"
+      ],
+      "domains": [],
+      "registry": [
+        {
+          "file": "credit_institutions_cross_border.json",
+          "name": "Saxo Bank A/S"
+        }
+      ]
+    },
+    {
+      "brand": "flatexDEGIRO",
+      "query": true,
+      "aliases": [
+        "flatexdegiro",
+        "flatex"
+      ],
+      "manual_aliases": [
+        "degiro"
+      ],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "credit_institutions_cross_border.json",
+          "name": "flatexDEGIRO Bank SE (flatexDEGIRO Bank AG, Flatex Bank AG)"
+        }
+      ]
+    },
+    {
+      "brand": "Trade Republic",
+      "query": true,
+      "aliases": [
+        "trade republic"
+      ],
+      "manual_aliases": [
+        "traderepublic"
+      ],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "credit_institutions_cross_border.json",
+          "name": "Trade Republic Bank GmbH"
+        }
+      ]
+    },
+    {
+      "brand": "AIXON Investment Management",
+      "query": true,
+      "aliases": [
+        "aixon investment management"
+      ],
+      "manual_aliases": [
+        "aixon"
+      ],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_firms.json",
+          "name": "AIXON INVESTMENT MANAGEMENT SP. Z O.O."
+        }
+      ],
+      "scope": "registered_in_poland"
+    },
+    {
+      "brand": "Caspar Asset Management",
+      "query": true,
+      "aliases": [
+        "caspar asset management"
+      ],
+      "manual_aliases": [
+        "caspar"
+      ],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_firms.json",
+          "name": "CASPAR ASSET MANAGEMENT S.A."
+        }
+      ],
+      "scope": "registered_in_poland"
+    },
+    {
+      "brand": "Ceres Dom Inwestycyjny",
+      "query": true,
+      "aliases": [
+        "ceres dom inwestycyjny"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_firms.json",
+          "name": "CERES DOM INWESTYCYJNY S.A."
+        }
+      ],
+      "scope": "registered_in_poland"
+    },
+    {
+      "brand": "CVI Dom Maklerski",
+      "query": true,
+      "aliases": [
+        "cvi"
+      ],
+      "manual_aliases": [
+        "cvi dom maklerski"
+      ],
+      "word_boundary_aliases": [
+        "cvi"
+      ],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_firms.json",
+          "name": "CVI DOM MAKLERSKI SP. Z O.O."
+        }
+      ],
+      "scope": "registered_in_poland"
+    },
+    {
+      "brand": "DI Nehrebetius",
+      "query": true,
+      "aliases": [
+        "dom inwestycyjny nehrebetius"
+      ],
+      "manual_aliases": [
+        "nehrebetius"
+      ],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_firms.json",
+          "name": "DOM INWESTYCYJNY NEHREBETIUS S.A."
+        }
+      ],
+      "scope": "registered_in_poland"
+    },
+    {
+      "brand": "DI Xelion",
+      "query": true,
+      "aliases": [
+        "dom inwestycyjny xelion"
+      ],
+      "manual_aliases": [
+        "xelion"
+      ],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_firms.json",
+          "name": "DOM INWESTYCYJNY XELION SP. Z O.O."
+        }
+      ],
+      "scope": "registered_in_poland"
+    },
+    {
+      "brand": "DM AFS",
+      "query": true,
+      "aliases": [
+        "dom maklerski afs"
+      ],
+      "manual_aliases": [
+        "dm afs"
+      ],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_firms.json",
+          "name": "DOM MAKLERSKI AFS Sp. z o.o."
+        }
+      ],
+      "scope": "registered_in_poland"
+    },
+    {
+      "brand": "DM BDM",
+      "query": true,
+      "aliases": [
+        "dom maklerski bdm"
+      ],
+      "manual_aliases": [
+        "bdm",
+        "dm bdm"
+      ],
+      "word_boundary_aliases": [
+        "bdm"
+      ],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_firms.json",
+          "name": "DOM MAKLERSKI BDM S.A."
+        }
+      ],
+      "scope": "registered_in_poland"
+    },
+    {
+      "brand": "DM INC",
+      "query": true,
+      "aliases": [
+        "dom maklerski"
+      ],
+      "manual_aliases": [
+        "dm inc",
+        "inc s.a."
+      ],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_firms.json",
+          "name": "DOM MAKLERSKI INC S.A."
+        }
+      ],
+      "scope": "registered_in_poland"
+    },
+    {
+      "brand": "DM Navigator",
+      "query": true,
+      "aliases": [
+        "dom maklerski navigator"
+      ],
+      "manual_aliases": [
+        "dm navigator",
+        "navigator capital"
+      ],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_firms.json",
+          "name": "DOM MAKLERSKI NAVIGATOR S.A."
+        }
+      ],
+      "scope": "registered_in_poland"
+    },
+    {
+      "brand": "DDPP Securities",
+      "query": true,
+      "aliases": [
+        "doradztwo dla polskich przedsiebiorstw securities"
+      ],
+      "manual_aliases": [
+        "ddpp securities",
+        "ddpp"
+      ],
+      "word_boundary_aliases": [
+        "ddpp"
+      ],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_firms.json",
+          "name": "DORADZTWO DLA POLSKICH PRZEDSIĘBIORSTW SECURITIES S.A."
+        }
+      ],
+      "scope": "registered_in_poland"
+    },
+    {
+      "brand": "Everest Investment Management",
+      "query": true,
+      "aliases": [
+        "everest investment management"
+      ],
+      "manual_aliases": [
+        "everest investments"
+      ],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_firms.json",
+          "name": "EVEREST INVESTMENT MANAGEMENT S.A."
+        }
+      ],
+      "scope": "registered_in_poland"
+    },
+    {
+      "brand": "EVO DM",
+      "query": true,
+      "aliases": [
+        "evo"
+      ],
+      "manual_aliases": [
+        "evo dom maklerski",
+        "evo dm"
+      ],
+      "word_boundary_aliases": [
+        "evo"
+      ],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_firms.json",
+          "name": "EVO DOM MAKLERSKI S.A."
+        }
+      ],
+      "scope": "registered_in_poland"
+    },
+    {
+      "brand": "IFDS DM",
+      "query": true,
+      "aliases": [
+        "ifds"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [
+        "ifds"
+      ],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_firms.json",
+          "name": "IFDS DOM MAKLERSKI S.A."
+        }
+      ],
+      "scope": "registered_in_poland"
+    },
+    {
+      "brand": "IPOPEMA Securities",
+      "query": true,
+      "aliases": [
+        "ipopema securities"
+      ],
+      "manual_aliases": [
+        "ipopema"
+      ],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_firms.json",
+          "name": "IPOPEMA SECURITIES S.A."
+        }
+      ],
+      "scope": "registered_in_poland"
+    },
+    {
+      "brand": "IX Asset Management",
+      "query": true,
+      "aliases": [
+        "ix asset management"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_firms.json",
+          "name": "IX ASSET MANAGEMENT S.A."
+        }
+      ],
+      "scope": "registered_in_poland"
+    },
+    {
+      "brand": "LFI DM",
+      "query": true,
+      "aliases": [
+        "lfi"
+      ],
+      "manual_aliases": [
+        "lfi dom maklerski",
+        "lfi dm"
+      ],
+      "word_boundary_aliases": [
+        "lfi"
+      ],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_firms.json",
+          "name": "LFI DOM MAKLERSKI S.A."
+        }
+      ],
+      "scope": "registered_in_poland"
+    },
+    {
+      "brand": "NWAI DM",
+      "query": true,
+      "aliases": [
+        "nwai"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [
+        "nwai"
+      ],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_firms.json",
+          "name": "NWAI DOM MAKLERSKI S.A."
+        }
+      ],
+      "scope": "registered_in_poland"
+    },
+    {
+      "brand": "PGE DM",
+      "query": true,
+      "aliases": [
+        "pge"
+      ],
+      "manual_aliases": [
+        "pge dom maklerski",
+        "dm pge"
+      ],
+      "word_boundary_aliases": [
+        "pge"
+      ],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_firms.json",
+          "name": "PGE DOM MAKLERSKI S.A."
+        }
+      ],
+      "scope": "registered_in_poland"
+    },
+    {
+      "brand": "Q Securities",
+      "query": true,
+      "aliases": [
+        "q securities"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "brokerage_firms.json",
+          "name": "Q SECURITIES S.A."
+        }
+      ],
+      "scope": "registered_in_poland"
+    },
+    {
+      "brand": "Convera",
+      "query": true,
+      "aliases": [
+        "convera europe financial"
+      ],
+      "manual_aliases": [
+        "convera"
+      ],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "foreign_investment_firms.json",
+          "name": "Convera Europe Financial S.A."
+        }
+      ],
+      "scope": "registered_in_poland"
+    },
+    {
+      "brand": "EXANTE (EXT Ltd)",
+      "query": true,
+      "aliases": [
+        "ext"
+      ],
+      "manual_aliases": [
+        "exante",
+        "ext ltd"
+      ],
+      "word_boundary_aliases": [
+        "ext"
+      ],
+      "domains": [],
+      "registry": [
+        {
+          "file": "foreign_investment_firms.json",
+          "name": "EXT Ltd"
+        }
+      ],
+      "scope": "registered_in_poland"
+    },
+    {
+      "brand": "InstaForex / ForexMart (Instant Trading EU)",
+      "query": true,
+      "aliases": [
+        "instant trading eu"
+      ],
+      "manual_aliases": [
+        "instaforex",
+        "forexmart"
+      ],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "foreign_investment_firms.json",
+          "name": "Instant Trading EU Ltd."
+        }
+      ],
+      "scope": "registered_in_poland"
+    },
+    {
+      "brand": "Jefferies",
+      "query": true,
+      "aliases": [
+        "jefferies"
+      ],
+      "manual_aliases": [],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "foreign_investment_firms.json",
+          "name": "Jefferies GmbH"
+        }
+      ],
+      "scope": "registered_in_poland"
+    },
+    {
+      "brand": "Tradition",
+      "query": true,
+      "aliases": [
+        "tradition financial services espana sociedad de valores"
+      ],
+      "manual_aliases": [
+        "tradition financial services"
+      ],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "foreign_investment_firms.json",
+          "name": "Tradition Financial Services España, Sociedad De Valores, S.A.U."
+        }
+      ],
+      "scope": "registered_in_poland"
+    },
+    {
+      "brand": "WOOD & Company",
+      "query": true,
+      "aliases": [
+        "wood & company financial services"
+      ],
+      "manual_aliases": [
+        "wood & company",
+        "wood & co"
+      ],
+      "word_boundary_aliases": [],
+      "domains": [],
+      "registry": [
+        {
+          "file": "foreign_investment_firms.json",
+          "name": "WOOD & Company Financial Services a.s."
+        }
+      ],
+      "scope": "registered_in_poland"
+    }
+  ]
+}

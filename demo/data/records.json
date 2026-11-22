@@ -1,0 +1,299 @@
+[
+  {
+    "platform": "instagram",
+    "external_id": "finkacper-101",
+    "module": "third_party_ads",
+    "url": "https://social.example/@finkacper/p/101",
+    "advertiser": {
+      "handle": "@finkacper",
+      "name": "Kacper Finansowy"
+    },
+    "advertised_firm": "Alfa Capital Brokers",
+    "published_at": "2026-11-19T18:00:00Z",
+    "title": "Mój pierwszy kwartał z Alfa Capital",
+    "text": "Hej! Od miesiąca inwestuję przez Alfa Capital Brokers i naprawdę polecam. Z moim kodem KACPER50 dostajesz 50 zł na start, link w bio. Zarobiłem 18% w kwartał!",
+    "label": true,
+    "images": []
+  },
+  {
+    "platform": "instagram",
+    "external_id": "finkacper-087",
+    "module": "third_party_ads",
+    "url": "https://social.example/@finkacper/p/87",
+    "advertiser": {
+      "handle": "@finkacper",
+      "name": "Kacper Finansowy"
+    },
+    "advertised_firm": "Alfa Capital Brokers",
+    "published_at": "2026-11-11T17:30:00Z",
+    "title": "Zaczynam inwestować, link w bio",
+    "text": "Zakładam konto w Alfa Capital Brokers. Z kodem KACPER50 dostajesz 50 zł na start. To moja współpraca z brokerem.",
+    "label": true,
+    "images": []
+  },
+  {
+    "platform": "instagram",
+    "external_id": "finkacper-064",
+    "module": "third_party_ads",
+    "url": "https://social.example/@finkacper/p/64",
+    "advertiser": {
+      "handle": "@finkacper",
+      "name": "Kacper Finansowy"
+    },
+    "advertised_firm": "Alfa Capital Brokers",
+    "published_at": "2026-11-03T12:00:00Z",
+    "title": "Porównuję brokerów",
+    "text": "Dziś porównanie kilku brokerów. Podoba mi się Alfa Capital, ale każdy powinien sam sprawdzić ofertę i ryzyko.",
+    "label": false,
+    "images": []
+  },
+  {
+    "platform": "youtube",
+    "external_id": "zlotyportfel-77",
+    "module": "third_party_ads",
+    "url": "https://video.example/@zlotyportfel/v/77",
+    "advertiser": {
+      "handle": "@zlotyportfel",
+      "name": "Złoty Portfel"
+    },
+    "advertised_firm": "Beta Dom Maklerski",
+    "published_at": "2026-11-14T09:00:00Z",
+    "title": null,
+    "text": "Chcesz zacząć inwestować? Otwórz konto w Beta Dom Maklerski przez mój link afiliacyjny #współpraca",
+    "label": true,
+    "images": []
+  },
+  {
+    "platform": "instagram",
+    "external_id": "analizy_ania-12",
+    "module": "third_party_ads",
+    "url": "https://social.example/@analizy_ania/p/12",
+    "advertiser": {
+      "handle": "@analizy_ania",
+      "name": "Analizy Ania"
+    },
+    "advertised_firm": "",
+    "published_at": "2026-11-16T08:00:00Z",
+    "title": null,
+    "text": "Dzisiejsza sesja na GPW: WIG20 spadł o 0,4%. Komentarz do danych o inflacji w mojej analizie. To nie jest rekomendacja i niczego nie sprzedaję.",
+    "label": false,
+    "images": []
+  },
+  {
+    "platform": "instagram",
+    "external_id": "kuchniabasi-9",
+    "module": "third_party_ads",
+    "url": "https://social.example/@kuchniabasi/p/9",
+    "advertiser": {
+      "handle": "@kuchniabasi",
+      "name": "Kuchnia Basi"
+    },
+    "advertised_firm": "",
+    "published_at": "2026-11-12T15:00:00Z",
+    "title": null,
+    "text": "Dzisiaj robimy pierogi ruskie, przepis w komentarzu. Smacznego!",
+    "label": false,
+    "images": []
+  },
+  {
+    "platform": "web",
+    "external_id": "alfa-capital-promo",
+    "module": "self_promotion",
+    "url": "https://alfa-capital.example/promo",
+    "advertiser": {
+      "handle": "alfa-capital.example",
+      "name": "Alfa Capital Brokers"
+    },
+    "advertised_firm": "Alfa Capital Brokers",
+    "published_at": "2026-11-15T10:00:00Z",
+    "title": null,
+    "text": "<h1>Alfa Capital Brokers</h1><p>Zarabiaj do 20% rocznie bez wysiłku! Nasza oferta jest zatwierdzona przez KNF i w pełni bezpieczna. Otwórz konto już dziś!</p>",
+    "label": true,
+    "images": []
+  },
+  {
+    "platform": "web",
+    "external_id": "beta-dm-oferta",
+    "module": "self_promotion",
+    "url": "https://beta-dm.example/oferta",
+    "advertiser": {
+      "handle": "beta-dm.example",
+      "name": "Beta Dom Maklerski"
+    },
+    "advertised_firm": "Beta Dom Maklerski",
+    "published_at": "2026-11-15T10:00:00Z",
+    "title": null,
+    "text": "<p>MATERIAŁ REKLAMOWY. Beta Dom Maklerski: fundusz Beta Akcje, stopa zwrotu 6,1% w latach 2021-2025 (pełne okresy 12-miesięczne, źródło: własne). Wyniki historyczne nie są wiarygodnym wskaźnikiem przyszłych wyników. Inwestowanie wiąże się z ryzykiem utraty kapitału, a prowizje i kursy walut wpływają na wynik.</p>",
+    "label": false,
+    "images": []
+  },
+  {
+    "platform": "web",
+    "external_id": "gamma-inv-prognozy",
+    "module": "self_promotion",
+    "url": "https://gamma-inv.example/prognozy",
+    "advertiser": {
+      "handle": "gamma-inv.example",
+      "name": "Gamma Investments"
+    },
+    "advertised_firm": "Gamma Investments",
+    "published_at": "2026-11-15T10:00:00Z",
+    "title": null,
+    "text": "Gamma Investments: prognozujemy 12% zysku na obligacjach w przyszłym roku. Wyniki historyczne: 15% w zeszłym roku! Ryzyko znajdziesz w regulaminie na dole strony.",
+    "label": true,
+    "images": []
+  },
+  {
+    "platform": "instagram",
+    "external_id": "nordic-capital-501",
+    "module": "self_promotion",
+    "url": "https://social.example/nordic-capital/p/501",
+    "advertiser": {
+      "handle": "nordic-capital",
+      "name": "Nordic Capital Brokers"
+    },
+    "advertised_firm": "Nordic Capital Brokers",
+    "published_at": "2026-11-17T10:00:00Z",
+    "title": null,
+    "text": "Nordic Capital Brokers i Marcus Vålen: inwestuj jak mistrz. Otwórz konto już dziś!",
+    "label": false,
+    "images": [
+      {
+        "file": "reklama-ambasador.png",
+        "variant": "desktop",
+        "focus": "page"
+      },
+      {
+        "file": "reklama-ambasador-mobile.png",
+        "variant": "mobile",
+        "focus": "page"
+      }
+    ]
+  },
+  {
+    "platform": "instagram",
+    "external_id": "nordic-capital-502",
+    "module": "self_promotion",
+    "url": "https://social.example/nordic-capital/p/502",
+    "advertiser": {
+      "handle": "nordic-capital",
+      "name": "Nordic Capital Brokers"
+    },
+    "advertised_firm": "Nordic Capital Brokers",
+    "published_at": "2026-11-18T10:00:00Z",
+    "title": null,
+    "text": "Nordic Capital Brokers i Marcus Vålen: inwestuj jak mistrz. Otwórz konto już dziś!",
+    "label": true,
+    "images": [
+      {
+        "file": "reklama-ambasador-zamazane-ryzyko.png",
+        "variant": "original",
+        "focus": "page"
+      }
+    ],
+    "manipulated": {
+      "rules": [
+        "5",
+        "6"
+      ],
+      "recipe": "zamazanie stopki z informacją o ryzyku (demo, wygenerowane)"
+    }
+  },
+  {
+    "platform": "instagram",
+    "external_id": "nordic-capital-503",
+    "module": "self_promotion",
+    "url": "https://social.example/nordic-capital/p/503",
+    "advertiser": {
+      "handle": "nordic-capital",
+      "name": "Nordic Capital Brokers"
+    },
+    "advertised_firm": "Nordic Capital Brokers",
+    "published_at": "2026-11-19T10:00:00Z",
+    "title": null,
+    "text": "Nordic Capital Brokers i Marcus Vålen: inwestuj jak mistrz. Otwórz konto już dziś!",
+    "label": true,
+    "images": [
+      {
+        "file": "reklama-ambasador.png",
+        "variant": "desktop",
+        "focus": "page"
+      },
+      {
+        "file": "reklama-ambasador-mobile-ucieta.png",
+        "variant": "mobile",
+        "focus": "page"
+      }
+    ],
+    "manipulated": {
+      "rules": [
+        "8"
+      ],
+      "recipe": "stopka z ryzykiem ucięta na ekranie telefonu (demo, wygenerowane)"
+    }
+  },
+  {
+    "platform": "web",
+    "external_id": "elite-wealth",
+    "module": "non_investment_companies",
+    "url": "https://elite-wealth.example/",
+    "advertiser": {
+      "handle": "elite-wealth.example",
+      "name": "Elite Wealth"
+    },
+    "advertised_firm": "",
+    "published_at": "2026-11-10T10:00:00Z",
+    "title": null,
+    "text": "Elite Wealth Partners: family office i wealth management dla zamożnych. Indywidualna strategia inwestycyjna, rekomendujemy konkretne akcje i fundusze, gwarantowany zysk 10% rocznie.",
+    "label": true,
+    "images": []
+  },
+  {
+    "platform": "web",
+    "external_id": "profitmaster",
+    "module": "non_investment_companies",
+    "url": "https://profitmaster.example/",
+    "advertiser": {
+      "handle": "profitmaster.example",
+      "name": "ProfitMaster"
+    },
+    "advertised_firm": "",
+    "published_at": "2026-11-10T10:00:00Z",
+    "title": null,
+    "text": "ProfitMaster Consulting: doradztwo inwestycyjne online. Powiemy Ci, w co zainwestować, a my zarządzimy Twoim portfelem. Pakiet Premium 499 zł miesięcznie.",
+    "label": true,
+    "images": []
+  },
+  {
+    "platform": "web",
+    "external_id": "smaczny-catering",
+    "module": "non_investment_companies",
+    "url": "https://smaczny-catering.example/",
+    "advertiser": {
+      "handle": "smaczny-catering.example",
+      "name": "Smaczny Catering"
+    },
+    "advertised_firm": "",
+    "published_at": "2026-11-10T10:00:00Z",
+    "title": null,
+    "text": "Smaczny Catering: obiady firmowe z dostawą do biura. Menu na cały tydzień, zamówienia online.",
+    "label": false,
+    "images": []
+  },
+  {
+    "platform": "web",
+    "external_id": "rachunki-plus",
+    "module": "non_investment_companies",
+    "url": "https://rachunki-plus.example/",
+    "advertiser": {
+      "handle": "rachunki-plus.example",
+      "name": "Rachunki Plus"
+    },
+    "advertised_firm": "",
+    "published_at": "2026-11-10T10:00:00Z",
+    "title": null,
+    "text": "Rachunki Plus: biuro rachunkowe. Księgowość, kadry i płace dla małych firm. Nie świadczymy usług doradztwa inwestycyjnego.",
+    "label": false,
+    "images": []
+  }
+]

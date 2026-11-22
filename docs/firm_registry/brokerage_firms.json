@@ -1,0 +1,480 @@
+{
+  "meta": {
+    "title_pl": "Domy maklerskie",
+    "url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/domy_maklerskie",
+    "source": "Komisja Nadzoru Finansowego (KNF)",
+    "retrieved": "2026-11-21",
+    "entry_count": 28,
+    "pages_retrieved": 2,
+    "pages_total": 2,
+    "complete": true,
+    "note": "Both result pages (page 1 and ?page=2) retrieved. former_names = names shown struck through on the page; other_names_as_listed = additional names on page 2 where strike-through is not visible in the source. scope_codes refer to the 'Zakres działalności' PDF on the page."
+  },
+  "entries": [
+    {
+      "name": "AIXON INVESTMENT MANAGEMENT SP. Z O.O.",
+      "address": "ul. Nieszawska 1, 61-021 Poznań",
+      "phone": null,
+      "fax": null,
+      "license_date": "2024-12-06",
+      "scope_codes": [
+        4
+      ]
+    },
+    {
+      "name": "CASPAR ASSET MANAGEMENT S.A.",
+      "address": "ul. Półwiejska 32, 61-888 Poznań",
+      "phone": "61 855 16 14",
+      "fax": "61 855 16 14 w.11",
+      "license_date": "2010-05-26",
+      "scope_codes": [
+        1,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "name": "CERES DOM INWESTYCYJNY S.A.",
+      "former_names": [
+        "EFIX DOM MAKLERSKI S.A."
+      ],
+      "address": "Plac Bankowy 1, 00-139 Warszawa",
+      "phone": "22 390 36 80",
+      "fax": "22 370 29 68",
+      "license_date": "2011-02-08",
+      "scope_codes": [
+        1,
+        4,
+        5,
+        6,
+        11,
+        12,
+        14,
+        16
+      ]
+    },
+    {
+      "name": "CVI DOM MAKLERSKI SP. Z O.O.",
+      "address": "Pl. Europejski 2, 00-844 Warszawa",
+      "phone": "694 555 544",
+      "fax": null,
+      "license_date": "2013-05-21",
+      "scope_codes": [
+        1,
+        4,
+        6
+      ]
+    },
+    {
+      "name": "DOM INWESTYCYJNY NEHREBETIUS S.A.",
+      "address": "ul. Prusa 10 lok.17, 30-109 Kraków",
+      "phone": "12 424-97-77",
+      "fax": "12 424-97-88",
+      "license_date": "2005-03-22",
+      "scope_codes": [
+        1,
+        4,
+        5,
+        6,
+        9,
+        11,
+        12
+      ]
+    },
+    {
+      "name": "DOM INWESTYCYJNY XELION SP. Z O.O.",
+      "address": "ul. Puławska 107, 02-595 Warszawa",
+      "phone": "22 565-44-00",
+      "fax": "22 565-44-01",
+      "license_date": "2011-10-18",
+      "scope_codes": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        9,
+        14
+      ]
+    },
+    {
+      "name": "DOM MAKLERSKI AFS Sp. z o.o.",
+      "address": "ul. Pańska 73, 00-834 Warszawa",
+      "phone": "22 314-71-21 (do 24)",
+      "fax": "22 654-68-02",
+      "license_date": "2010-07-15",
+      "scope_codes": [
+        1,
+        5,
+        14
+      ]
+    },
+    {
+      "name": "DOM MAKLERSKI BANKU OCHRONY ŚRODOWISKA S.A.",
+      "address": "ul. Marszałkowska 78/80, 00-517 Warszawa",
+      "phone": "22 504-31-02",
+      "fax": "22 504-31-00",
+      "license_date": "1994-08-18",
+      "scope_codes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        9,
+        11,
+        12,
+        13,
+        14,
+        16
+      ]
+    },
+    {
+      "name": "DOM MAKLERSKI BDM S.A.",
+      "address": "ul. Stojałowskiego 27, 43-300 Bielsko-Biała",
+      "phone": "33 812-84-40/41",
+      "fax": "33 812-84-42",
+      "license_date": "1993-10-08",
+      "scope_codes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "name": "DOM MAKLERSKI INC S.A.",
+      "address": "ul. Arcybiskupa Antoniego Baraniaka 6, 61-131 Poznań",
+      "phone": "61 845 50 00",
+      "fax": "61 297 79 27",
+      "license_date": "2012-02-21",
+      "scope_codes": [
+        1,
+        2,
+        5,
+        6,
+        9,
+        11,
+        14
+      ]
+    },
+    {
+      "name": "DOM MAKLERSKI NAVIGATOR S.A.",
+      "address": "ul. Twarda 18, 00-105 Warszawa",
+      "phone": "22 630-83-33",
+      "fax": null,
+      "license_date": "2007-09-27",
+      "scope_codes": [
+        1,
+        2,
+        6,
+        9,
+        11,
+        12,
+        14
+      ]
+    },
+    {
+      "name": "DORADZTWO DLA POLSKICH PRZEDSIĘBIORSTW SECURITIES S.A.",
+      "address": "Pl. Dąbrowskiego 1/313, 00-057 Warszawa",
+      "phone": "602 711 235",
+      "fax": null,
+      "license_date": "2008-05-20",
+      "scope_codes": [
+        6,
+        11,
+        12
+      ]
+    },
+    {
+      "name": "ERSTE SECURITIES POLSKA S.A.",
+      "address": "ul. Królewska 16, 00-103 Warszawa",
+      "phone": "22 257 57 00",
+      "fax": "22 257 57 01",
+      "license_date": "1995-09-29",
+      "scope_codes": [
+        1,
+        2,
+        5,
+        6,
+        9,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "name": "EVEREST INVESTMENT MANAGEMENT S.A.",
+      "address": "ul. Grochowska 152 lok. 2, 04-329 Warszawa",
+      "phone": "22 110 00 25",
+      "fax": "22 838 37 84",
+      "license_date": "2015-10-06",
+      "scope_codes": [
+        4,
+        5
+      ]
+    },
+    {
+      "name": "EVO DOM MAKLERSKI S.A.",
+      "former_names": [
+        "PRIME SELECTION DOM MAKLERSKI S.A."
+      ],
+      "address": "ul. Jana Pankiewicza 3, 00-696 Warszawa",
+      "phone": "22 417 58 60-61",
+      "fax": "brak informacji",
+      "email": "psdm@psdm.pl",
+      "license_date": "2015-11-17",
+      "scope_codes": [
+        1,
+        5,
+        6
+      ]
+    },
+    {
+      "name": "IFDS DOM MAKLERSKI S.A.",
+      "former_names": [
+        "INVESTMENT FUNDS DEPOSITARY SERVICES S.A."
+      ],
+      "address": "ul. Konstruktorska 12, 02-673 Warszawa",
+      "phone": null,
+      "fax": null,
+      "license_date": "2023-09-28",
+      "scope_codes": [
+        1,
+        9
+      ]
+    },
+    {
+      "name": "IPOPEMA SECURITIES S.A.",
+      "address": "ul. Próżna 9, 00-107 Warszawa",
+      "phone": "22 236-92-00; 22 236-92-95",
+      "fax": "22 236-92-82",
+      "license_date": "2005-06-30",
+      "scope_codes": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "name": "IX ASSET MANAGEMENT S.A.",
+      "former_names": [
+        "NIEZALEŻNY DOM MAKLERSKI S.A."
+      ],
+      "address": "ul. Wojciecha Górskiego 9, 00-033 Warszawa",
+      "phone": "22 254-97-59; 22 254-97-60",
+      "fax": "22 247 27 11",
+      "license_date": "2014-11-18",
+      "scope_codes": [
+        1,
+        4,
+        5,
+        6,
+        11,
+        12,
+        14
+      ]
+    },
+    {
+      "name": "LFI DOM MAKLERSKI S.A.",
+      "former_names": [
+        "LFI DM S.A."
+      ],
+      "address": "ul. Pawła Włodkowica 4, 50-072 Wrocław",
+      "phone": null,
+      "fax": null,
+      "license_date": "2026-06-26",
+      "scope_codes": [
+        4
+      ]
+    },
+    {
+      "name": "MICHAEL/STRÖM DOM MAKLERSKI S.A.",
+      "former_names": [
+        "MICHAEL/STRÖM DOM MAKLERSKI Sp. z o.o."
+      ],
+      "address": "ul. Pańska 97, 00-834 Warszawa",
+      "phone": "22 128-59-00",
+      "fax": "22 128-59-87",
+      "license_date": "2013-06-04",
+      "scope_codes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        12,
+        14,
+        15
+      ]
+    },
+    {
+      "name": "NOBLE Securities S.A.",
+      "address": "ul. Prosta 67, 00-838 Warszawa",
+      "phone": "22 244 13 03",
+      "fax": "12 411-17-66",
+      "license_date": "1993-12-27",
+      "scope_codes": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        9,
+        11,
+        12,
+        14,
+        16
+      ]
+    },
+    {
+      "name": "NWAI DOM MAKLERSKI S.A.",
+      "address": "ul. Nowy Świat 64, 00-357 Warszawa",
+      "phone": "22 201-97-50",
+      "fax": "22 201-97-51",
+      "license_date": "2009-07-31",
+      "scope_codes": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        9,
+        11,
+        14,
+        15
+      ]
+    },
+    {
+      "name": "OANDA TMS BROKERS S.A.",
+      "other_names_as_listed": [
+        "Dom Maklerski TMS BROKERS S.A."
+      ],
+      "address": "Rondo Daszyńskiego 1, 00-843 Warszawa",
+      "phone": "22 27 66 200",
+      "fax": "22 27 66 202",
+      "license_date": "2004-04-26",
+      "scope_codes": [
+        1,
+        2,
+        3,
+        5,
+        9,
+        10,
+        13,
+        14,
+        16
+      ]
+    },
+    {
+      "name": "PEKAO INVESTMENT BANKING S.A.",
+      "address": "ul. Żubra 1, 01-066 Warszawa",
+      "phone": "604 109 109",
+      "fax": null,
+      "license_date": "1993-10-08",
+      "scope_codes": [
+        1,
+        6,
+        11,
+        12
+      ]
+    },
+    {
+      "name": "PGE DOM MAKLERSKI S.A.",
+      "address": "ul. Mysia 2, 00-496 Warszawa",
+      "phone": "22 340-13-60",
+      "fax": "22 622-27-49",
+      "license_date": "2013-12-10",
+      "scope_codes": [
+        1,
+        2,
+        5,
+        9,
+        11,
+        12,
+        13,
+        14,
+        16
+      ]
+    },
+    {
+      "name": "Q SECURITIES S.A.",
+      "address": "Al. Jerozolimskie 93, 02-001 Warszawa",
+      "phone": "22 417-44-00",
+      "fax": "22 417-44-01",
+      "license_date": "2013-10-29",
+      "scope_codes": [
+        1,
+        2,
+        6,
+        9,
+        11,
+        12
+      ]
+    },
+    {
+      "name": "TRIGON DOM MAKLERSKI S.A.",
+      "address": "ul. Mogilska 65, 31-545 Kraków (Biuro Zarządu: Plac Unii, Budynek B, ul. Puławska 2, 02-566 Warszawa)",
+      "phone": "12 629-24-00; 12 629-25-00; 22 330-11-11",
+      "fax": "12 629-24-50; 12 629-25-50",
+      "license_date": "1991-09-30",
+      "scope_codes": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        11,
+        12,
+        14,
+        15
+      ]
+    },
+    {
+      "name": "XTB S.A.",
+      "other_names_as_listed": [
+        "X-TRADE BROKERS DOM MAKLERSKI S.A."
+      ],
+      "address": "ul. Prosta 67, 00-838 Warszawa",
+      "phone": "22 201-95-50",
+      "fax": "22 520-22-81",
+      "license_date": "2005-11-08",
+      "scope_codes": [
+        1,
+        2,
+        3,
+        9,
+        13,
+        14,
+        16
+      ]
+    }
+  ]
+}

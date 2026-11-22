@@ -1,0 +1,243 @@
+{
+  "meta": {
+    "title": "KNF scope-of-activity codes and definitions",
+    "used_by_files": [
+      "domy_maklerskie.json",
+      "banki_prowadzace_dzialalnosc_maklerska.json (scope_codes, 1-16)",
+      "oddzialy_zagranicznych_firm_inwestycyjnych.json and zagraniczne_firmy_inwestycyjne_bez_oddzialu.json (A/B/C codes)"
+    ],
+    "source": "https://bip.knf.gov.pl/knf/pl/komponenty/img/zakres_dzialalnosci.pdf (KNF table 'Zakres działalności': Lp. / Directive 2014/65/EU Annex I section / Polish Act on Trading in Financial Instruments art. 69)",
+    "retrieved": "2026-11-21",
+    "notes": [
+      "polish_scope_codes (1-16) are the numbers in the 'Zakres działalności' column of the domestic registers; each maps to one MiFID II Annex I section A/B point (mifid_ii_ref).",
+      "Foreign-firm registers use the MiFID II codes directly: A = investment services and activities, B = ancillary services, C = financial instruments.",
+      "The PDF text extraction was slightly scrambled; Polish diacritics and the row order were restored by hand. This PDF is the KNF table at bip.knf.gov.pl, assumed to match the one linked on the register pages (…_91227.pdf), which could not be opened directly.",
+      "name_en values and the Section C definitions (mifid_ii_section_C) are not from the KNF PDF: they are English glosses/paraphrases of MiFID II Annex I written from general knowledge and should be checked against the directive text before formal use."
+    ]
+  },
+  "polish_scope_codes": [
+    {
+      "code": 1,
+      "mifid_ii_ref": "A1",
+      "category": "investment_service",
+      "mifid_ii_definition_pl": "Przyjmowanie i przekazywanie zleceń w odniesieniu do jednego lub większej liczby instrumentów finansowych",
+      "polish_act_definition_pl": "Przyjmowanie i przekazywanie zleceń nabycia lub zbycia instrumentów finansowych",
+      "polish_act_ref": [
+        "art. 69 ust. 2 pkt 1"
+      ],
+      "name_en": "Receiving and transmitting orders in financial instruments"
+    },
+    {
+      "code": 2,
+      "mifid_ii_ref": "A2",
+      "category": "investment_service",
+      "mifid_ii_definition_pl": "Wykonywanie zleceń na rachunek klienta",
+      "polish_act_definition_pl": "Wykonywanie zleceń, o których mowa w pkt 1, na rachunek dającego zlecenie",
+      "polish_act_ref": [
+        "art. 69 ust. 2 pkt 2"
+      ],
+      "name_en": "Execution of orders on behalf of clients"
+    },
+    {
+      "code": 3,
+      "mifid_ii_ref": "A3",
+      "category": "investment_service",
+      "mifid_ii_definition_pl": "Zawieranie transakcji na własny rachunek",
+      "polish_act_definition_pl": "Nabywanie lub zbywanie na własny rachunek instrumentów finansowych",
+      "polish_act_ref": [
+        "art. 69 ust. 2 pkt 3"
+      ],
+      "name_en": "Dealing on own account"
+    },
+    {
+      "code": 4,
+      "mifid_ii_ref": "A4",
+      "category": "investment_service",
+      "mifid_ii_definition_pl": "Zarządzanie portfelem",
+      "polish_act_definition_pl": "Zarządzanie portfelami, w skład których wchodzi jeden lub większa liczba instrumentów finansowych",
+      "polish_act_ref": [
+        "art. 69 ust. 2 pkt 4"
+      ],
+      "name_en": "Portfolio management"
+    },
+    {
+      "code": 5,
+      "mifid_ii_ref": "A5",
+      "category": "investment_service",
+      "mifid_ii_definition_pl": "Doradztwo inwestycyjne",
+      "polish_act_definition_pl": "Doradztwo inwestycyjne",
+      "polish_act_ref": [
+        "art. 69 ust. 2 pkt 5"
+      ],
+      "name_en": "Investment advice"
+    },
+    {
+      "code": 6,
+      "mifid_ii_ref": "A6",
+      "category": "investment_service",
+      "mifid_ii_definition_pl": "Gwarantowanie emisji instrumentów finansowych lub subemisja instrumentów finansowych z gwarancją przejęcia emisji",
+      "polish_act_definition_pl": "Świadczenie usług w wykonaniu zawartych umów o gwarancję emisji lub zawieranie i wykonywanie innych umów o podobnym charakterze, jeżeli ich przedmiotem są instrumenty finansowe",
+      "polish_act_ref": [
+        "art. 69 ust. 2 pkt 7"
+      ],
+      "name_en": "Underwriting / placing with a firm commitment"
+    },
+    {
+      "code": 7,
+      "mifid_ii_ref": "A7",
+      "category": "investment_service",
+      "mifid_ii_definition_pl": "Subemisja instrumentów finansowych bez gwarancji przejęcia emisji",
+      "polish_act_definition_pl": "Oferowanie instrumentów finansowych",
+      "polish_act_ref": [
+        "art. 69 ust. 2 pkt 6"
+      ],
+      "name_en": "Placing without a firm commitment (offering of financial instruments)"
+    },
+    {
+      "code": 8,
+      "mifid_ii_ref": "A8",
+      "category": "investment_service",
+      "mifid_ii_definition_pl": "Prowadzenie MTF",
+      "polish_act_definition_pl": "Prowadzenie ASO",
+      "polish_act_ref": [
+        "art. 69 ust. 2 pkt 8"
+      ],
+      "name_en": "Operation of an MTF (in Polish law: alternative trading system, ASO)"
+    },
+    {
+      "code": 9,
+      "mifid_ii_ref": "A9",
+      "category": "investment_service",
+      "mifid_ii_definition_pl": "Prowadzenie OTF",
+      "polish_act_definition_pl": "Prowadzenie OTF",
+      "polish_act_ref": [
+        "art. 69 ust. 2 pkt 9"
+      ],
+      "name_en": "Operation of an OTF"
+    },
+    {
+      "code": 10,
+      "mifid_ii_ref": "B1",
+      "category": "ancillary_service",
+      "mifid_ii_definition_pl": "Sprawowanie pieczy nad instrumentami finansowymi oraz administrowanie nimi na rachunek klientów, w tym przechowywanie i usługi powiązane, takie jak zarządzanie środkami pieniężnymi/zabezpieczeniem, z wyłączeniem zapewniania i prowadzenia rachunków papierów wartościowych na najwyższym poziomie ewidencji",
+      "polish_act_definition_pl": "Przechowywanie lub rejestrowanie instrumentów finansowych, w tym prowadzenie rachunków papierów wartościowych, rachunków derywatów i rachunków zbiorczych oraz prowadzenie rachunków pieniężnych",
+      "polish_act_ref": [
+        "art. 69 ust. 4 pkt 1"
+      ],
+      "name_en": "Safekeeping and administration of financial instruments (custody, accounts)"
+    },
+    {
+      "code": 11,
+      "mifid_ii_ref": "B2",
+      "category": "ancillary_service",
+      "mifid_ii_definition_pl": "Udzielanie kredytów lub pożyczek inwestorowi, umożliwiając mu zawieranie transakcji obejmujących jeden lub większą liczbę instrumentów finansowych, w przypadku gdy firma udzielająca kredytu lub pożyczki jest zaangażowana w transakcję",
+      "polish_act_definition_pl": "Udzielanie pożyczek pieniężnych w celu dokonania transakcji, której przedmiotem jest jeden lub większa liczba instrumentów finansowych, jeżeli transakcja ma być dokonana za pośrednictwem firmy inwestycyjnej udzielającej pożyczki",
+      "polish_act_ref": [
+        "art. 69 ust. 4 pkt 2"
+      ],
+      "name_en": "Granting credits or loans to an investor for transactions in financial instruments"
+    },
+    {
+      "code": 12,
+      "mifid_ii_ref": "B3",
+      "category": "ancillary_service",
+      "mifid_ii_definition_pl": "Doradztwo dla przedsiębiorstw odnoszące się do struktury kapitałowej, strategii i odnośnych kwestii, jak również doradztwo i usługi dotyczące łączenia się oraz nabywania przedsiębiorstw",
+      "polish_act_definition_pl": "Doradztwo dla przedsiębiorstw w zakresie struktury kapitałowej, strategii przedsiębiorstwa lub innych zagadnień związanych z taką strukturą lub strategią; doradztwo i inne usługi w zakresie łączenia, podziału oraz przejmowania przedsiębiorstw",
+      "polish_act_ref": [
+        "art. 69 ust. 4 pkt 3",
+        "art. 69 ust. 4 pkt 4"
+      ],
+      "name_en": "Corporate advice on capital structure and strategy; M&A advice and services"
+    },
+    {
+      "code": 13,
+      "mifid_ii_ref": "B4",
+      "category": "ancillary_service",
+      "mifid_ii_definition_pl": "Usługi dewizowe w przypadku gdy są one związane ze świadczeniem usług inwestycyjnych",
+      "polish_act_definition_pl": "Wymiana walutowa, w przypadku gdy jest to związane z działalnością maklerską",
+      "polish_act_ref": [
+        "art. 69 ust. 4 pkt 5"
+      ],
+      "name_en": "Foreign exchange services connected with investment services"
+    },
+    {
+      "code": 14,
+      "mifid_ii_ref": "B5",
+      "category": "ancillary_service",
+      "mifid_ii_definition_pl": "Badania inwestycyjne i analiza finansowa lub inne formy ogólnych rekomendacji odnoszących się do transakcji na instrumentach finansowych",
+      "polish_act_definition_pl": "Sporządzanie analiz inwestycyjnych, analiz finansowych oraz innych rekomendacji o charakterze ogólnym dotyczących transakcji w zakresie instrumentów finansowych",
+      "polish_act_ref": [
+        "art. 69 ust. 4 pkt 6"
+      ],
+      "name_en": "Investment research, financial analysis and general recommendations"
+    },
+    {
+      "code": 15,
+      "mifid_ii_ref": "B6",
+      "category": "ancillary_service",
+      "mifid_ii_definition_pl": "Usługi związane z ubezpieczaniem (gwarantowaniem) emisji",
+      "polish_act_definition_pl": "Świadczenie usług dodatkowych związanych z umową o gwarancję emisji",
+      "polish_act_ref": [
+        "art. 69 ust. 4 pkt 7"
+      ],
+      "name_en": "Services related to underwriting"
+    },
+    {
+      "code": 16,
+      "mifid_ii_ref": "B7",
+      "category": "ancillary_service",
+      "mifid_ii_definition_pl": "Usługi inwestycyjne i działalność inwestycyjna, a także usługi dodatkowe z rodzaju uwzględnionego w załączniku I sekcja A lub B, dotyczące instrumentów bazowych dla instrumentów pochodnych uwzględnionych w sekcji C pkt 5, 6, 7 i 10, w przypadku gdy są one związane ze świadczeniem usług inwestycyjnych lub dodatkowych",
+      "polish_act_definition_pl": "Wykonywanie czynności określonych w pkt 1-7 oraz ust. 2, których przedmiotem są instrumenty bazowe instrumentów pochodnych wskazanych w art. 2 ust. 1 pkt 2 lit. d-f oraz i, jeżeli te czynności pozostają w związku z działalnością maklerską",
+      "polish_act_ref": [
+        "art. 69 ust. 4 pkt 8"
+      ],
+      "name_en": "Services relating to underlyings of certain derivatives (Section C points 5, 6, 7, 10)"
+    }
+  ],
+  "mifid_ii_section_C_financial_instruments": [
+    {
+      "code": "C1",
+      "description_en": "Transferable securities"
+    },
+    {
+      "code": "C2",
+      "description_en": "Money-market instruments"
+    },
+    {
+      "code": "C3",
+      "description_en": "Units in collective investment undertakings"
+    },
+    {
+      "code": "C4",
+      "description_en": "Options, futures, swaps, forward rate agreements and other derivatives relating to securities, currencies, interest rates or yields, emission allowances, financial indices or measures (physically or cash settled)"
+    },
+    {
+      "code": "C5",
+      "description_en": "Options, futures, swaps, FRAs and other derivatives relating to commodities that must or may be settled in cash"
+    },
+    {
+      "code": "C6",
+      "description_en": "Options, futures, swaps and other derivatives relating to commodities that can be physically settled, traded on a regulated market, MTF or OTF (excluding wholesale energy products on an OTF that must be physically settled)"
+    },
+    {
+      "code": "C7",
+      "description_en": "Options, futures, swaps, forwards and other derivatives relating to commodities that can be physically settled and are not covered by C6 and not for commercial purposes"
+    },
+    {
+      "code": "C8",
+      "description_en": "Derivative instruments for the transfer of credit risk"
+    },
+    {
+      "code": "C9",
+      "description_en": "Financial contracts for differences (CFDs)"
+    },
+    {
+      "code": "C10",
+      "description_en": "Options, futures, swaps, FRAs and other derivatives relating to climatic variables, freight rates, inflation rates or other official economic statistics, settled in cash or at the option of a party"
+    },
+    {
+      "code": "C11",
+      "description_en": "Emission allowances consisting of units recognised for compliance with the EU Emissions Trading Scheme"
+    }
+  ]
+}

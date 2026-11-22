@@ -1,0 +1,124 @@
+# Ręcznie dobrana lista publicznych stron (tylko strony pierwotne, bez logowania). `label` to ocena autora zbioru
+# (`basis` mówi, na czym się opiera), nie rozstrzygnięcie KNF; null = nie oceniamy. `manipulate` = przepisy z manipulate.py,
+# z których powstają warianty z celowo złamaną regułą M2 (oznaczone w danych jako manipulated).
+entries:
+  # --- M1: materiały osób trzecich promujące brokerów (serwisy porównawcze, recenzje) ---
+  - id: moneteo-xtb
+    module: third_party_ads
+    url: https://moneteo.com/analizy/rachunek-forex-standard-xtb
+    advertiser: {handle: moneteo.com, name: Moneteo}
+    firm: XTB
+  - id: moneteo-etoro
+    module: third_party_ads
+    url: https://moneteo.com/analizy/etoro
+    advertiser: {handle: moneteo.com, name: Moneteo}
+    firm: eToro
+  - id: moneteo-ranking-forex
+    module: third_party_ads
+    url: https://moneteo.com/rankingi/brokerzy-forex
+    advertiser: {handle: moneteo.com, name: Moneteo}
+  - id: freenance-ranking
+    module: third_party_ads
+    url: https://freenance.io/rankingi/ranking-rachunkow-maklerskich-2026/
+    advertiser: {handle: freenance.io, name: Freenance}
+  - id: track360-ranking
+    module: third_party_ads
+    url: https://track360.io/pl/blog/ranking-brokerow-forex-2026
+    advertiser: {handle: track360.io, name: Track360}
+  - id: eupf-xtb-trading212
+    module: third_party_ads
+    url: https://www.eupersonalfinance.eu/pl/articles/xtb-czy-trading-212
+    advertiser: {handle: eupersonalfinance.eu, name: EU Personal Finance}
+    firm: XTB
+  - id: bankier-inwestowanie
+    module: third_party_ads
+    url: https://www.bankier.pl/inwestowanie/
+    advertiser: {handle: bankier.pl, name: Bankier.pl}
+    label: false
+    basis: dział redakcyjny portalu informacyjnego, bez oferty konkretnej firmy
+
+  # --- M2: własny marketing firm inwestycyjnych (oryginał + warianty z celowo złamaną regułą) ---
+  - id: xtb-home
+    module: self_promotion
+    url: https://www.xtb.com/pl
+    advertiser: {handle: xtb.com, name: XTB}
+    firm: XTB
+    manipulate: [tiny_print, blurred, inflated_returns, regulator_approval]
+  - id: xtb-kod-promocyjny
+    module: self_promotion
+    url: https://www.xtb.com/pl/edukacja/kod-promocyjny-xtb
+    advertiser: {handle: xtb.com, name: XTB}
+    firm: XTB
+    manipulate: [low_contrast, behind_link, no_ad_label, tax_claim]
+  - id: xtb-o-nas
+    module: self_promotion
+    url: https://www.xtb.com/pl/o-nas
+    advertiser: {handle: xtb.com, name: XTB}
+    firm: XTB
+    manipulate: [mobile_clipped, safe_because_supervised]
+  - id: bossa-home
+    module: self_promotion
+    url: https://www.bossa.pl/
+    advertiser: {handle: bossa.pl, name: Dom Maklerski BOŚ}
+    firm: Dom Maklerski BOŚ
+    manipulate: [removed_warning, forecast, english_warning]
+  - id: etoro-home
+    module: self_promotion
+    url: https://www.etoro.com/pl/
+    advertiser: {handle: etoro.com, name: eToro}
+    firm: eToro
+    manipulate: [comparison_no_source, mobile_clipped]
+  - id: ig-pl
+    module: self_promotion
+    url: https://www.ig.com/pl
+    advertiser: {handle: ig.com, name: IG}
+    firm: IG
+
+  # --- M3: doradztwo bez uprawnień (pozytywy) i trudne negatywy (firmy doradcze, które nie są domami maklerskimi) ---
+  - id: tv-xauusd-eth
+    module: non_investment_companies
+    platform: tradingview
+    url: https://www.tradingview.com/chart/ETHUSD/ZONOB6QM-ETHUSD-Will-Go-Up-Buy/
+    advertiser: {handle: XauusdGoldForexSignals}
+    label: true
+    basis: konkretne rekomendacje kup/sprzedaj i zaproszenie do płatnego kanału z sygnałami
+  - id: tv-xauusd-eurusd
+    module: non_investment_companies
+    platform: tradingview
+    url: https://de.tradingview.com/chart/EURUSD/3xy99SmP-EURUSD-Strong-Bearish-Bias-Sell
+    advertiser: {handle: XauusdGoldForexSignals}
+    label: true
+    basis: konkretne rekomendacje kup/sprzedaj i zaproszenie do płatnego kanału z sygnałami
+  - id: tv-xauusd-dxy
+    module: non_investment_companies
+    platform: tradingview
+    url: https://my.tradingview.com/chart/DXY/esXD29aR-DXY-Market-Is-Looking-Down-Sell
+    advertiser: {handle: XauusdGoldForexSignals}
+    label: true
+    basis: konkretne rekomendacje kup/sprzedaj i zaproszenie do płatnego kanału z sygnałami
+  - id: tv-xauusd-usoil
+    module: non_investment_companies
+    platform: tradingview
+    url: https://il.tradingview.com/chart/USOIL/H6PUhGbH-USOIL-Move-Down-Expected-Sell
+    advertiser: {handle: XauusdGoldForexSignals}
+    label: true
+    basis: konkretne rekomendacje kup/sprzedaj i zaproszenie do płatnego kanału z sygnałami
+  - id: tv-unitedsignals-chfjpy
+    module: non_investment_companies
+    platform: tradingview
+    url: https://www.tradingview.com/chart/CHFJPY/HMnFys1A-CHFJPY-Free-Trading-Signal/
+    advertiser: {handle: UnitedSignals}
+    label: true
+    basis: sygnał transakcyjny i zaproszenie do kanału Telegram z sygnałami
+  - id: ey-family-office
+    module: non_investment_companies
+    url: https://www.ey.com/pl_pl/services/family-office
+    advertiser: {handle: ey.com, name: EY Polska}
+    label: false
+    basis: doradztwo sukcesyjne i prawno-podatkowe dla rodzin, bez rekomendowania instrumentów (trudny negatyw)
+  - id: grantthornton-family-office
+    module: non_investment_companies
+    url: https://grantthornton.pl/usluga/kancelaria-prawna/family-office/
+    advertiser: {handle: grantthornton.pl, name: Grant Thornton}
+    label: false
+    basis: usługi prawne i organizacyjne dla firm rodzinnych (trudny negatyw)

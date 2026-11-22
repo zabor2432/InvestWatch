@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "title_pl": "Firmy inwestycyjne, którym cofnięto zezwolenie na prowadzenie działalności maklerskiej",
+    "url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/rejestr_firm_inwestycyjnych_ktorym_cofnieto_zezwolenie_na_dzialalnosc_maklerska",
+    "source": "Komisja Nadzoru Finansowego (KNF)",
+    "retrieved": "2026-11-21",
+    "entry_count": 2,
+    "complete": true,
+    "note": "Parsed by scraper app.registry.knf; struck-through text stored in former_* fields."
+  },
+  "entries": [
+    {
+      "name": "ATHENA INVESTMENTS Dom Maklerski SA",
+      "description": "31 maja 2023 r. Komisja Nadzoru Finansowego podjęła decyzję o cofnięciu Athena Investments Domowi Maklerskiemu SA zezwolenia na prowadzenie działalności maklerskiej - szczegóły wkomunikacie KNF w sprawie cofnięcia zezwolenia na prowadzenie działalności maklerskiej przez Athena Investments Dom Maklerski SA",
+      "page_updated": "16 grudnia 2025"
+    },
+    {
+      "name": "VENTUS ASSET MANAGEMENT S.A.",
+      "description": "24 sierpnia 2023 roku Komisja Nadzoru Finansowego jednogłośnie cofnęła zezwolenie na prowadzenie działalności maklerskiej przez Ventus Asset Management SA z siedzibą w Warszawie - szczegóły w komunikacie KNF w sprawie cofnięcia zezwolenia na prowadzenie działalności maklerskiej przez Ventus Asset Management SA",
+      "page_updated": "16 grudnia 2025"
+    }
+  ]
+}

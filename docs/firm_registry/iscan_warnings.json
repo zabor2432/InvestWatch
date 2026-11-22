@@ -1,0 +1,871 @@
+{
+  "meta": {
+    "title_pl": "IOSCO I-SCAN - ostrzeżenia regulatorów",
+    "url": "https://www.iosco.org/i-scan/",
+    "source": "IOSCO",
+    "retrieved": "2026-11-21",
+    "entry_count": 78,
+    "complete": true,
+    "note": "NCA_ID filter: 75; validation date within the last 24 months."
+  },
+  "entries": [
+    {
+      "name": "Financial House Limited",
+      "full_name": "Financial House Limited (formerly Jeton Venture Limited) with its registered office in London (Great Britain)",
+      "other_names": [],
+      "websites": [
+        "https://www.jeton.com"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=Financial+House+Limited",
+      "validation_date": "2026-10-20",
+      "iscan_id": "57658"
+    },
+    {
+      "name": "ASI AIM Investment Fund SA",
+      "full_name": "ASI AIM Investment Fund SA",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=ASI+AIM",
+      "validation_date": "2026-10-20",
+      "iscan_id": "57657"
+    },
+    {
+      "name": "MT Capital sp. z o.o",
+      "full_name": "MT Capital sp. z o.o.",
+      "other_names": [],
+      "websites": [
+        "https://www.mtcapital.pl"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=MT+Capital",
+      "validation_date": "2026-10-20",
+      "iscan_id": "57656"
+    },
+    {
+      "name": "Getin Premium Bank",
+      "full_name": "Getin Premium Bank (GPB Bank) operating through the website www.gpbbank.pl",
+      "other_names": [],
+      "websites": [
+        "https://www.gpbbank.pl"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=getin",
+      "validation_date": "2026-09-04",
+      "iscan_id": "56433"
+    },
+    {
+      "name": "SVV Poland Sp. z o.o",
+      "full_name": "SVV Poland Sp. z o.o. with its registered office in Warsaw (BTCbank)",
+      "other_names": [],
+      "websites": [
+        "https://www.btcbank.pl"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=SVV",
+      "validation_date": "2026-09-03",
+      "iscan_id": "56417"
+    },
+    {
+      "name": "Bank Gorzów S.A",
+      "full_name": "Bank Gorzów S.A., Bank Gorzów SA",
+      "other_names": [],
+      "websites": [
+        "https://www.gorzowpl.com/en/"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=Gorz%C3%B3w",
+      "validation_date": "2026-08-13",
+      "iscan_id": "55877"
+    },
+    {
+      "name": "Swiss Credit Support sp. z o.o",
+      "full_name": "Swiss Credit Support sp. z o.o. with its registered office in Gdańsk",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=swiss+credit",
+      "validation_date": "2026-07-31",
+      "iscan_id": "55636"
+    },
+    {
+      "name": "FK Sp. z o. o",
+      "full_name": "FK Sp. z o. o.",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=FK",
+      "validation_date": "2026-07-31",
+      "iscan_id": "55635"
+    },
+    {
+      "name": "Fundusz Korona Sp. z o. o",
+      "full_name": "Fundusz Korona Sp. z o. o.",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=korona",
+      "validation_date": "2026-07-31",
+      "iscan_id": "55634"
+    },
+    {
+      "name": "Usługi Finansowo-Biurowe Elżbieta Znamirowska",
+      "full_name": "Usługi Finansowo-Biurowe Elżbieta Znamirowska",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=znamirowska",
+      "validation_date": "2026-07-31",
+      "iscan_id": "55633"
+    },
+    {
+      "name": "Anna Tomaszewska Doradztwo i Pośrednictwo Ubezpieczeniowo-Finansowe",
+      "full_name": "Anna Tomaszewska Doradztwo i Pośrednictwo Ubezpieczeniowo-Finansowe",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=anna+tomaszewska",
+      "validation_date": "2026-07-31",
+      "iscan_id": "55632"
+    },
+    {
+      "name": "Crowder S.A",
+      "full_name": "Crowder S.A. (formerly: Crowder sp. z o.o., National Court Register no. KRS: 0001062041)",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=Crowder",
+      "validation_date": "2026-06-15",
+      "iscan_id": "54328"
+    },
+    {
+      "name": "Aurum Neo-Bank Sp. z o.o",
+      "full_name": "Aurum Neo-Bank Sp. z o.o. with its registered office in Warsaw, National Court Register no. (KRS): 0001117211",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=Aurum",
+      "validation_date": "2026-06-15",
+      "iscan_id": "54327"
+    },
+    {
+      "name": "Atlantic Comium operating through the websites atlanticcomium.org and atlantic-comium.tech",
+      "full_name": "Atlantic Comium operating through the websites atlanticcomium.org and atlantic-comium.tech",
+      "other_names": [],
+      "websites": [
+        "https://atlanticcomium.org"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=atlantic-comium&warningTypeId=all",
+      "validation_date": "2026-05-05",
+      "iscan_id": "51944"
+    },
+    {
+      "name": "Mobilum Pay sp. z o.o.. National Court Register no",
+      "full_name": "Mobilum Pay sp. z o.o.. National Court Register no. (KRS): 0000871351",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=mobilum&warningTypeId=all",
+      "validation_date": "2026-04-16",
+      "iscan_id": "51547"
+    },
+    {
+      "name": "Ambersgate Global operating through the websites www.ambersgate-global.digital",
+      "full_name": "Ambersgate Global operating through the websites www.ambersgate-global.digital, www.ambersgate-global.org, www.ambersgateglobal.net, www.ambersgate.global, www.ambersgate.net, www.ambersgate-global.ltd and www.amersgate.ltd",
+      "other_names": [],
+      "websites": [
+        "https://www.ambersgate-global.digital"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=ambersgate&warningTypeId=all",
+      "validation_date": "2026-03-11",
+      "iscan_id": "49694"
+    },
+    {
+      "name": "Mobilnej Polska Banku S.A. - mpbo2.pl",
+      "full_name": "Mobilnej Polska Banku S.A. - mpbo2.pl",
+      "other_names": [],
+      "websites": [
+        "https://mpbo2.pl"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=mobilnej&warningTypeId=all",
+      "validation_date": "2026-02-25",
+      "iscan_id": "49003"
+    },
+    {
+      "name": "Platform 42 Financial operating through the websites www.42-financial.com",
+      "full_name": "Platform 42 Financial operating through the websites www.42-financial.com",
+      "other_names": [],
+      "websites": [
+        "https://www.42-financial.com"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=42+financial&warningTypeId=all",
+      "validation_date": "2026-02-13",
+      "iscan_id": "48755"
+    },
+    {
+      "name": "Gates Investment Bank Plc",
+      "full_name": "Gates Investment Bank Plc (www.gatesib.com)",
+      "other_names": [],
+      "websites": [
+        "https://www.gatesib.com"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=gates+investment+bank+&warningTypeId=all",
+      "validation_date": "2026-02-13",
+      "iscan_id": "48754"
+    },
+    {
+      "name": "Platform Prosperity Fund Solution",
+      "full_name": "Platform Prosperity Fund Solution, operating through the website www.prosperity-fs.com",
+      "other_names": [],
+      "websites": [
+        "https://www.prosperity-fs.com"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=PROSPERITY+FUND&warningTypeId=all",
+      "validation_date": "2026-02-13",
+      "iscan_id": "48751"
+    },
+    {
+      "name": "New Hold AG operating through the websites www.newhold.pro and www.newhold.net",
+      "full_name": "New Hold AG operating through the websites www.newhold.pro and www.newhold.net",
+      "other_names": [],
+      "websites": [
+        "https://www.newhold.pro"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=new+hold&warningTypeId=all",
+      "validation_date": "2026-01-16",
+      "iscan_id": "47949"
+    },
+    {
+      "name": "Insurance and financial intermediation agency \"LAXO\" Tadeusz Parafiniuk",
+      "full_name": "Insurance and financial intermediation agency \"LAXO\" Tadeusz Parafiniuk, Tax Identificxation no. (NIP): 5371006583",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=LAXO&warningTypeId=all",
+      "validation_date": "2026-01-16",
+      "iscan_id": "47948"
+    },
+    {
+      "name": "Insurance and financial intermediation agency \"LAXO\" Tadeusz Parafiniuk",
+      "full_name": "Insurance and financial intermediation agency \"LAXO\" Tadeusz Parafiniuk, Tax Identification no (NIP): 5371006583",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=LAXO&warningTypeId=all",
+      "validation_date": "2026-01-16",
+      "iscan_id": "47947"
+    },
+    {
+      "name": "Nostra AI Investment operating through the website nai-investment.com",
+      "full_name": "Nostra AI Investment operating through the website nai-investment.com",
+      "other_names": [],
+      "websites": [
+        "https://nai-investment.com"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=nostra&warningTypeId=all",
+      "validation_date": "2026-01-16",
+      "iscan_id": "47946"
+    },
+    {
+      "name": "Platform EFX Trading operating through the website www.efxtrading.top",
+      "full_name": "Platform EFX Trading operating through the website www.efxtrading.top",
+      "other_names": [],
+      "websites": [
+        "https://www.efxtrading.top"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=EFX&warningTypeId=all",
+      "validation_date": "2025-12-12",
+      "iscan_id": "47153"
+    },
+    {
+      "name": "Payholding International sp. z o.o",
+      "full_name": "Payholding International sp. z o.o.",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=payholding&warningTypeId=all",
+      "validation_date": "2025-12-12",
+      "iscan_id": "47152"
+    },
+    {
+      "name": "Platform operating through the website stonxpro.com",
+      "full_name": "Platform operating through the website stonxpro.com",
+      "other_names": [],
+      "websites": [
+        "https://stonxpro.com"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=stonxpro&warningTypeId=all",
+      "validation_date": "2025-12-12",
+      "iscan_id": "46986"
+    },
+    {
+      "name": "Nine Ventures operating through the website www.nine-ventures.com",
+      "full_name": "Nine Ventures operating through the website www.nine-ventures.com, www.nine-ventures.net and www.nine-ventures.org",
+      "other_names": [],
+      "websites": [
+        "https://www.nine-ventures.com"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=nine&warningTypeId=all",
+      "validation_date": "2025-12-12",
+      "iscan_id": "46985"
+    },
+    {
+      "name": "Unidentified persons operating through the websites www.kredyty-bank.pl and www.kredytybank.com",
+      "full_name": "Unidentified persons operating through the websites www.kredyty-bank.pl and www.kredytybank.com",
+      "other_names": [],
+      "websites": [
+        "https://www.kredyty-bank.pl"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=kredyty-bank&warningTypeId=all",
+      "validation_date": "2025-10-30",
+      "iscan_id": "42240"
+    },
+    {
+      "name": "Bevas Bank Limited Polska S.A",
+      "full_name": "Bevas Bank Limited Polska S.A. (bevas-pl.com/)",
+      "other_names": [],
+      "websites": [
+        "https://bevas-pl.com"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=bevas&warningTypeId=all",
+      "validation_date": "2025-10-30",
+      "iscan_id": "42239"
+    },
+    {
+      "name": "Edutrading",
+      "full_name": "Edutrading, using the website edutrading.com, represented by the entity Adlegion Ltd",
+      "other_names": [],
+      "websites": [
+        "https://edutrading.com"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=edutrading&warningTypeId=all",
+      "validation_date": "2025-10-19",
+      "iscan_id": "41996"
+    },
+    {
+      "name": "Techsolutionlive operating through the websites www.techsolutionlive.com",
+      "full_name": "Techsolutionlive operating through the websites www.techsolutionlive.com, www.techsolutionlive.net and www.trading.techsolutionlive.com",
+      "other_names": [],
+      "websites": [
+        "https://www.techsolutionlive.com"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=techsolutionlive&warningTypeId=all",
+      "validation_date": "2025-09-30",
+      "iscan_id": "41377"
+    },
+    {
+      "name": "„CzappHF” using the website czapphf.com and theczapp.com",
+      "full_name": "„CzappHF” using the website czapphf.com and theczapp.com",
+      "other_names": [],
+      "websites": [
+        "https://czapphf.com"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=czapphf&warningTypeId=all",
+      "validation_date": "2025-09-30",
+      "iscan_id": "41376"
+    },
+    {
+      "name": "INWE Sp. z o.o",
+      "full_name": "INWE Sp. z o.o. (formerly: Pracownia Finansowa Sp. z o.o.)",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=Pracownia+finansowa&warningTypeId=all",
+      "validation_date": "2025-09-30",
+      "iscan_id": "41375"
+    },
+    {
+      "name": "Ekologiczna Elektrownia Wiatrowa 15 sp. z o.o",
+      "full_name": "Ekologiczna Elektrownia Wiatrowa 15 sp. z o.o.",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=ekologiczna&warningTypeId=all",
+      "validation_date": "2025-09-30",
+      "iscan_id": "41374"
+    },
+    {
+      "name": "General Trading Company operating through the website cfd.general-trading-company.io",
+      "full_name": "General Trading Company operating through the website cfd.general-trading-company.io",
+      "other_names": [],
+      "websites": [
+        "https://cfd.general-trading-company.io"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=general+trading&warningTypeId=all",
+      "validation_date": "2025-09-10",
+      "iscan_id": "40840"
+    },
+    {
+      "name": "Unidentified persons operating through the MultiStox operating through the websites: multi-stox.com",
+      "full_name": "Unidentified persons operating through the MultiStox operating through the websites: multi-stox.com, multistox.com and GraniteMark operating through the websites: granitemark.net, granitemark.pro, trd.granitemark.net, trd.granitermark.pro",
+      "other_names": [],
+      "websites": [
+        "https://multi-stox.com"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=granitemark&warningTypeId=all",
+      "validation_date": "2025-09-10",
+      "iscan_id": "40839"
+    },
+    {
+      "name": "Quomarkets using the website quomarkets.com",
+      "full_name": "Quomarkets using the website quomarkets.com",
+      "other_names": [],
+      "websites": [
+        "https://quomarkets.com"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=quomarkets&warningTypeId=all",
+      "validation_date": "2025-09-02",
+      "iscan_id": "40656"
+    },
+    {
+      "name": "Domking Capital Ltd operating through the websites: www.domkingcapitalltd.com and www.domking-capital.com",
+      "full_name": "Domking Capital Ltd operating through the websites: www.domkingcapitalltd.com and www.domking-capital.com",
+      "other_names": [],
+      "websites": [
+        "https://www.domkingcapitalltd.com"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=domking&warningTypeId=all",
+      "validation_date": "2025-08-27",
+      "iscan_id": "40429"
+    },
+    {
+      "name": "Blitz Finance operating through the website blitz365finance.org",
+      "full_name": "Blitz Finance operating through the website blitz365finance.org",
+      "other_names": [],
+      "websites": [
+        "https://blitz365finance.org"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=blitz&warningTypeId=all",
+      "validation_date": "2025-08-27",
+      "iscan_id": "40428"
+    },
+    {
+      "name": "Profile Hub operating through the website ser.profile-hub.net",
+      "full_name": "Profile Hub operating through the website ser.profile-hub.net, user.profile-hub.org, wt.profile-hub.org",
+      "other_names": [],
+      "websites": [
+        "https://ser.profile-hub.net"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=profile+hub&warningTypeId=all",
+      "validation_date": "2025-08-22",
+      "iscan_id": "40307"
+    },
+    {
+      "name": "Capital Systematics platform",
+      "full_name": "Capital Systematics platform, operating through the website cap-crm.org",
+      "other_names": [],
+      "websites": [
+        "https://cap-crm.org"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=capital+systematics&warningTypeId=all",
+      "validation_date": "2025-08-14",
+      "iscan_id": "40093"
+    },
+    {
+      "name": "Altavics Group platform",
+      "full_name": "Altavics Group platform, operating through the website altavicsgroup.com",
+      "other_names": [],
+      "websites": [
+        "https://altavicsgroup.com"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=altavics&warningTypeId=all",
+      "validation_date": "2025-08-14",
+      "iscan_id": "40092"
+    },
+    {
+      "name": "EWA Tradingplatform",
+      "full_name": "EWA Tradingplatform, operating through the website ewa-trading.com",
+      "other_names": [],
+      "websites": [
+        "https://ewa-trading.com"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=ewa+trading&warningTypeId=all",
+      "validation_date": "2025-08-14",
+      "iscan_id": "40091"
+    },
+    {
+      "name": "Dom Finansowo-Inwestycyjny Filar sp. z o.o",
+      "full_name": "Dom Finansowo-Inwestycyjny Filar sp. z o.o.",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=filar&warningTypeId=all",
+      "validation_date": "2025-07-28",
+      "iscan_id": "39683"
+    },
+    {
+      "name": "Platform using SwissQuateGPT trade name and operating through the website www.swissquategpt.com",
+      "full_name": "Platform using SwissQuateGPT trade name and operating through the website www.swissquategpt.com",
+      "other_names": [],
+      "websites": [
+        "https://www.swissquategpt.com"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=swissquate&warningTypeId=all",
+      "validation_date": "2025-07-28",
+      "iscan_id": "39682"
+    },
+    {
+      "name": "Unidentified persons operating through the „InvestingFDX” and „FdxInvesting” platforms",
+      "full_name": "Unidentified persons operating through the „InvestingFDX” and „FdxInvesting” platforms, operating through the website fdxinvesting.com",
+      "other_names": [],
+      "websites": [
+        "https://fdxinvesting.com"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=fdx&warningTypeId=all",
+      "validation_date": "2025-07-28",
+      "iscan_id": "39681"
+    },
+    {
+      "name": "Mariusz Szafraniec Firma Wielobranżowa",
+      "full_name": "Mariusz Szafraniec Firma Wielobranżowa",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=szafraniec&warningTypeId=all",
+      "validation_date": "2025-07-24",
+      "iscan_id": "39661"
+    },
+    {
+      "name": "Entity operating through the website signalfxoption.com",
+      "full_name": "Entity operating through the website signalfxoption.com",
+      "other_names": [],
+      "websites": [
+        "https://signalfxoption.com"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=signalfx&warningTypeId=all",
+      "validation_date": "2025-07-24",
+      "iscan_id": "39660"
+    },
+    {
+      "name": "DreamFactory Solutions LLC",
+      "full_name": "DreamFactory Solutions LLC",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=dreamfactory&warningTypeId=all",
+      "validation_date": "2025-06-23",
+      "iscan_id": "38710"
+    },
+    {
+      "name": "TC Media Sp. z o.o",
+      "full_name": "TC Media Sp. z o.o.",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=tc+media&warningTypeId=all",
+      "validation_date": "2025-06-23",
+      "iscan_id": "38709"
+    },
+    {
+      "name": "Everest Group operating through the website everst.eu",
+      "full_name": "Everest Group operating through the website everst.eu",
+      "other_names": [],
+      "websites": [
+        "https://everst.eu"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=everest+group&warningTypeId=all",
+      "validation_date": "2025-06-23",
+      "iscan_id": "38708"
+    },
+    {
+      "name": "Janvest Capital 4 sp. z o.o",
+      "full_name": "Janvest Capital 4 sp. z o.o.",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=janvest&warningTypeId=all",
+      "validation_date": "2025-06-11",
+      "iscan_id": "38539"
+    },
+    {
+      "name": "Fanconic Group",
+      "full_name": "Fanconic Group",
+      "other_names": [],
+      "websites": [
+        "https://fanconicgroup.com"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=fanconic&warningTypeId=all",
+      "validation_date": "2025-05-30",
+      "iscan_id": "38235"
+    },
+    {
+      "name": "Wurmie Sp. z o.o",
+      "full_name": "Wurmie Sp. z o.o.",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=wurmie&warningTypeId=all",
+      "validation_date": "2025-05-02",
+      "iscan_id": "37423"
+    },
+    {
+      "name": "Prime Capital Credit Union Investment Bank using the website primecapitaleuco.sbs \n\n Prime Capital Credit Union Investment Bank” us",
+      "full_name": "Prime Capital Credit Union Investment Bank using the website primecapitaleuco.sbs \n\n Prime Capital Credit Union Investment Bank” us",
+      "other_names": [],
+      "websites": [
+        "https://primecapitaleuco.sbs"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=prime+capital&warningTypeId=all",
+      "validation_date": "2025-05-02",
+      "iscan_id": "37312"
+    },
+    {
+      "name": "",
+      "full_name": "",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=apex&warningTypeId=all",
+      "validation_date": "2025-05-02",
+      "iscan_id": "37311"
+    },
+    {
+      "name": "Zenith Partners Alternatywna Spółka Inwestycyjna sp. z o.o",
+      "full_name": "Zenith Partners Alternatywna Spółka Inwestycyjna sp. z o.o.",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=zenith+partners&warningTypeId=all",
+      "validation_date": "2025-05-02",
+      "iscan_id": "37310"
+    },
+    {
+      "name": "Smart Invest Studio",
+      "full_name": "Smart Invest Studio",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=smart+invest&warningTypeId=all",
+      "validation_date": "2025-03-13",
+      "iscan_id": "36650"
+    },
+    {
+      "name": "Lincoln Financial Service LTD",
+      "full_name": "Lincoln Financial Service LTD",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=lincoln&warningTypeId=all",
+      "validation_date": "2025-03-13",
+      "iscan_id": "36649"
+    },
+    {
+      "name": "BPH Investment Fund Company",
+      "full_name": "an identified person maintaining a FB profile: BPH Investment Fund Company",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=BPH&warningTypeId=all",
+      "validation_date": "2025-03-13",
+      "iscan_id": "36648"
+    },
+    {
+      "name": "the entity operating via the website www.szybkopodzastaw.pl",
+      "full_name": "the entity operating via the website www.szybkopodzastaw.pl",
+      "other_names": [],
+      "websites": [
+        "https://www.szybkopodzastaw.pl"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=szybkopodzastaw&warningTypeId=all",
+      "validation_date": "2025-03-13",
+      "iscan_id": "36647"
+    },
+    {
+      "name": "platform Rockwall Investments run by Rockwall Limited",
+      "full_name": "platform Rockwall Investments run by Rockwall Limited",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=rockwall&warningTypeId=all",
+      "validation_date": "2025-02-19",
+      "iscan_id": "36449"
+    },
+    {
+      "name": "Eurotrade Invest",
+      "full_name": "Eurotrade Invest",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=eurotrade+invest&warningTypeId=all",
+      "validation_date": "2025-02-18",
+      "iscan_id": "36447"
+    },
+    {
+      "name": "Tamgacom LLC",
+      "full_name": "Tamgacom LLC",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=tamgacom&warningTypeId=all",
+      "validation_date": "2025-01-15",
+      "iscan_id": "35986"
+    },
+    {
+      "name": "Baltic Bridge Investment",
+      "full_name": "Baltic Bridge Investment (Switzerland)",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=baltic&warningTypeId=all",
+      "validation_date": "2025-01-14",
+      "iscan_id": "35966"
+    },
+    {
+      "name": "Birdie Yas Insurance Limited",
+      "full_name": "Birdie Yas Insurance Limited",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=birdie&warningTypeId=all",
+      "validation_date": "2025-01-14",
+      "iscan_id": "35965"
+    },
+    {
+      "name": "Marta Sobańska",
+      "full_name": "Marta Sobańska",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=soba%C5%84ska&warningTypeId=all",
+      "validation_date": "2025-01-10",
+      "iscan_id": "35927"
+    },
+    {
+      "name": "Łukasz Skliniorz Platforma Finansowa",
+      "full_name": "Łukasz Skliniorz Platforma Finansowa; Łukasz Skliniorz Platforma Finansowa Lanckorona Łukasz Skliniorz Korona Finanse; Łukasz Skliniorz Doradztwo Kredytowe Sloan",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=skliniorz&warningTypeId=all",
+      "validation_date": "2025-01-10",
+      "iscan_id": "35926"
+    },
+    {
+      "name": "Rafał S",
+      "full_name": "Rafał S.",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings",
+      "validation_date": "2025-01-09",
+      "iscan_id": "35910"
+    },
+    {
+      "name": "ENTER Maciej Żabiński",
+      "full_name": "ENTER Maciej Żabiński",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=enter+marcin&warningTypeId=all",
+      "validation_date": "2025-01-09",
+      "iscan_id": "35909"
+    },
+    {
+      "name": "Ami Solutions",
+      "full_name": "Ami Solutions",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=ami+solutions&warningTypeId=all",
+      "validation_date": "2025-01-03",
+      "iscan_id": "35840"
+    },
+    {
+      "name": "Investingunity operating via the websites investing-unity.com",
+      "full_name": "Investingunity operating via the websites investing-unity.com, investing-unity.biz, investingunity.com",
+      "other_names": [],
+      "websites": [
+        "https://investing-unity.com"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=investingunity&warningTypeId=all",
+      "validation_date": "2025-01-03",
+      "iscan_id": "35839"
+    },
+    {
+      "name": "Credit Royal Sp. z o.o",
+      "full_name": "Credit Royal Sp. z o.o.",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=credit+royal&warningTypeId=all",
+      "validation_date": "2025-01-03",
+      "iscan_id": "35837"
+    },
+    {
+      "name": "Dziesiątka Finanse S.A",
+      "full_name": "Dziesiątka Finanse S.A. currently: Elektronika Rent S.A.",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=dziesi%C4%85tka+finanse&warningTypeId=all",
+      "validation_date": "2025-01-03",
+      "iscan_id": "35836"
+    },
+    {
+      "name": "CK Money sp. z o. o",
+      "full_name": "CK Money sp. z o. o. , currently: Cash Capital 4 You sp. z o. o.",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=ck+money&warningTypeId=all",
+      "validation_date": "2025-01-03",
+      "iscan_id": "35835"
+    },
+    {
+      "name": "CK Investments 2 Sp. z o.o",
+      "full_name": "CK Investments 2 Sp. z o.o. currently: Property Advisors Group Sp. z o.o.",
+      "other_names": [],
+      "websites": [],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=Property&warningTypeId=all",
+      "validation_date": "2025-01-03",
+      "iscan_id": "35834"
+    },
+    {
+      "name": "TRDnavigator",
+      "full_name": "TRDnavigator; https://www.trdnavigator.com/",
+      "other_names": [],
+      "websites": [
+        "https://www.trdnavigator.com"
+      ],
+      "regulator": "Poland - Polish Financial Supervision Authority",
+      "regulator_url": "https://www.knf.gov.pl/en/CONSUMERS/Information_for_the_financial_market_consumers/Public_warnings?warningName=TRD&warningTypeId=all",
+      "validation_date": "2025-01-03",
+      "iscan_id": "35833"
+    }
+  ]
+}
